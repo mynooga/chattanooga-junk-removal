@@ -1,0 +1,102 @@
+Create and update a complete set of SEO pages for this static junk removal website.
+
+IMPORTANT RULES:
+- Do NOT use React or frameworks
+- Do NOT change build setup
+- Only create/edit plain HTML files
+- Place all new files in public/ so they deploy correctly
+- Keep existing design, layout, header, footer, and styles consistent
+
+----------------------------------
+CREATE THESE NEW PAGES
+----------------------------------
+
+TIER 1:
+- contact.html
+- junk-removal-pricing-chattanooga-tn.html
+- about.html
+
+TIER 2:
+- junk-removal-near-me.html
+- same-day-junk-removal-chattanooga-tn.html
+
+TIER 3:
+- how-much-does-junk-removal-cost-chattanooga.html
+- how-to-get-rid-of-old-furniture-chattanooga.html
+- appliance-disposal-chattanooga-tn.html
+
+----------------------------------
+CONTENT REQUIREMENTS (ALL PAGES)
+----------------------------------
+
+Each page must include:
+- Unique <title>
+- Unique meta description
+- H1 with target keyword
+- 500–900 words of natural content
+- Chattanooga-specific references
+- Strong call-to-action with clickable phone link
+- Link back to homepage
+
+Do NOT:
+- invent reviews
+- claim licensing/insurance unless already stated
+- keyword stuff
+
+----------------------------------
+INTERNAL LINKING STRUCTURE (CRITICAL)
+----------------------------------
+
+Update ALL pages with this structure:
+
+HOMEPAGE:
+Add 3 sections:
+1. Services (link to all service pages)
+2. Service Areas (link to all location pages)
+3. Helpful Info (link to pricing, near-me, same-day, and blog pages)
+
+SERVICE PAGES:
+- Link to 2–3 other service pages
+- Link to 2–3 location pages
+- Link to pricing page
+
+LOCATION PAGES:
+- Link to 2–3 service pages
+- Link to homepage
+- Link to near-me page
+
+SUPPORT PAGES (pricing, near-me, blog):
+- Link back to service pages
+- Link to location pages where relevant
+
+----------------------------------
+FOOTER (ADD TO ALL PAGES)
+----------------------------------
+
+Add consistent footer navigation with links to:
+- Homepage
+- 2–3 service pages
+- 1–2 location pages
+- Contact page
+
+----------------------------------
+NAVIGATION UPDATE
+----------------------------------
+
+Update header navigation to include:
+- Home
+- Services
+- Service Areas
+- Pricing
+- Contact
+
+----------------------------------
+FINAL GOAL
+----------------------------------
+
+Create a clean, interconnected internal linking structure so:
+- All pages are crawlable
+- Authority flows between pages
+- Site is optimized for local SEO rankings
+
+Do not change design — only add pages and improve structure.

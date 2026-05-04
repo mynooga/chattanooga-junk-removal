@@ -15,6 +15,16 @@
     .brand { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.02em; color: #fff; text-decoration: none; }
     .header-phone { color: #f97316; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
     .header-phone:hover { text-decoration: underline; }
+    .header-right { display: flex; align-items: center; gap: 16px; }
+    .menu-btn { background: none; border: 2px solid rgba(255,255,255,0.3); color: #fff; font-size: 1.3rem; cursor: pointer; padding: 4px 10px; border-radius: 4px; line-height: 1; }
+    .menu-btn:hover { border-color: #f97316; color: #f97316; }
+    .dropdown-menu { background: #1a2e4a; border-bottom: 2px solid #f97316; display: none; }
+    .dropdown-menu.open { display: block; }
+    .dropdown-menu .container { display: flex; flex-direction: column; padding: 8px 20px 16px; }
+    .dropdown-menu a { color: #cbd5e1; text-decoration: none; font-size: 1rem; padding: 11px 0; border-bottom: 1px solid #253d5c; display: block; }
+    .dropdown-menu a:last-child { border-bottom: none; }
+    .dropdown-menu a:hover, .dropdown-menu a.active { color: #f97316; }
+    .menu-label { color: #94a3b8; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 12px 0 4px; display: block; }
     .nav-bar { background: #122338; border-bottom: 1px solid #0f1c2e; }
     .nav-bar .container { display: flex; gap: 4px; flex-wrap: wrap; }
     .nav-bar a { color: #cbd5e1; text-decoration: none; font-size: 0.88rem; padding: 8px 12px; display: inline-block; transition: color 0.15s; }
@@ -60,9 +70,30 @@
   <header>
     <div class="container">
       <a class="brand" href="/">Chattanooga Junk Removal</a>
-      <a class="header-phone" href="tel:+14235550100">(423) 555-0100</a>
+      <div class="header-right">
+        <a class="header-phone" href="tel:+14235550100">(423) 555-0100</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+      </div>
     </div>
   </header>
+  <nav class="dropdown-menu" id="dropdownMenu">
+    <div class="container">
+      <a href="/">Home</a>
+      <span class="menu-label">Services</span>
+      <a href="/furniture-removal-chattanooga-tn.html">Furniture Removal</a>
+      <a href="/appliance-removal-chattanooga-tn.html">Appliance Removal</a>
+      <a href="/garage-cleanout-chattanooga-tn.html">Garage Cleanout</a>
+      <a href="/yard-debris-removal-chattanooga-tn.html">Yard Debris Removal</a>
+      <a href="/estate-cleanout-chattanooga-tn.html">Estate Cleanout</a>
+      <span class="menu-label">Service Areas</span>
+      <a href="/junk-removal-hixson-tn.html" class="active">Hixson, TN</a>
+      <a href="/junk-removal-east-brainerd-tn.html">East Brainerd, TN</a>
+      <a href="/junk-removal-red-bank-tn.html">Red Bank, TN</a>
+      <span class="menu-label">Info</span>
+      <a href="/junk-removal-pricing-chattanooga-tn.html">Pricing</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </nav>
   <section class="hero">
     <div class="container">
       <h1>Junk Removal in Hixson, TN</h1>
@@ -173,8 +204,14 @@
 
   <footer>
     <p>&copy; 2025 Chattanooga Junk Removal &bull; Serving Hixson, TN &amp; surrounding areas &bull; <a href="tel:+14235550100">(423) 555-0100</a></p>
-    <p style="margin-top:10px;"><a href="/">Home</a> &bull; <a href="/furniture-removal-chattanooga-tn.html">Furniture Removal</a> &bull; <a href="/garage-cleanout-chattanooga-tn.html">Garage Cleanout</a> &bull; <a href="/junk-removal-east-brainerd-tn.html">East Brainerd, TN</a></p>
+    <p style="margin-top:10px;"><a href="/">Home</a> &bull; <a href="/furniture-removal-chattanooga-tn.html">Furniture Removal</a> &bull; <a href="/junk-removal-pricing-chattanooga-tn.html">Pricing</a> &bull; <a href="/contact.html">Contact</a> &bull; <a href="/junk-removal-east-brainerd-tn.html">East Brainerd, TN</a></p>
   </footer>
 
+  <script>
+    var btn = document.getElementById('menuBtn');
+    var menu = document.getElementById('dropdownMenu');
+    btn.addEventListener('click', function(e) { e.stopPropagation(); menu.classList.toggle('open'); });
+    document.addEventListener('click', function() { menu.classList.remove('open'); });
+  </script>
 </body>
 </html>
