@@ -1,0 +1,58 @@
+Improve SEO indexing and crawlability for this static junk removal website.
+
+Do NOT change the build setup.
+Do NOT use React.
+Do NOT change the visual design.
+Only edit existing HTML files and supporting static files.
+
+PHASE 2 — Internal Linking
+Update every HTML page so Google can crawl the full site easily.
+
+Requirements:
+- Homepage links to all service pages, all location pages, and all support/info pages.
+- Every service page links to:
+  - homepage
+  - 2–3 related service pages
+  - 2–3 location pages
+  - pricing page
+- Every location page links to:
+  - homepage
+  - 2–3 service pages
+  - junk-removal-near-me.html
+- Every support/info page links back to relevant service and location pages.
+- Use descriptive anchor text, not “click here.”
+
+PHASE 3 — Titles and H1s
+Audit every HTML page.
+
+Requirements:
+- Each page must have one clear H1 only.
+- Each title tag should include the main keyword and location when relevant.
+- Use this style:
+  Primary Keyword | Chattanooga, TN | Same Day Service
+- Make sure H1s are natural and match the page topic.
+
+PHASE 4 — Content Boost
+Improve each location and service page with a short relevance paragraph.
+
+Requirements:
+- Add 1–2 natural paragraphs to each page.
+- Mention Chattanooga or the specific service area.
+- Mention relevant services naturally, such as furniture removal, appliance removal, garage cleanouts, estate cleanouts, and same-day pickup.
+- Do not keyword stuff.
+- Do not duplicate the same paragraph across pages.
+
+PHASE 6 — Technical Check
+Audit and fix basic technical SEO issues.
+
+Requirements:
+- Make sure every internal link works.
+- Make sure sitemap.xml includes all live pages.
+- Make sure robots.txt allows crawling.
+- Make sure all images have descriptive alt text.
+- Make sure all phone links use tel:+14235563473.
+- Make sure the visible phone number is (423) 556-3473.
+- Make sure pages are mobile-friendly and no obvious layout issues were introduced.
+
+Final goal:
+Improve crawlability, indexing, and on-page SEO without changing the site design or deployment setup.
