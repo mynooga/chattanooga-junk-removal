@@ -1,0 +1,107 @@
+Create 3 new location-based SEO pages for this static junk removal website.
+
+IMPORTANT RULES:
+- Do NOT duplicate content from existing location pages
+- Do NOT just swap city names
+- Each page must feel locally written and unique
+- Do NOT use React or frameworks
+- Do NOT change build setup
+- Only create plain HTML files
+- Place all new files in public/ so they deploy correctly
+- Keep the same design, header, footer, and styling
+
+----------------------------------
+CREATE THESE PAGES
+----------------------------------
+
+1. junk-removal-ooltewah-tn.html
+2. junk-removal-soddy-daisy-tn.html
+3. junk-removal-signal-mountain-tn.html
+
+----------------------------------
+CONTENT REQUIREMENTS (VERY IMPORTANT)
+----------------------------------
+
+Each page must include:
+
+- Unique <title>:
+  Example:
+  Junk Removal Ooltewah TN | Same Day Pickup Chattanooga Area
+
+- Unique meta description
+
+- H1 with city keyword:
+  Example:
+  Junk Removal in Ooltewah, TN
+
+- 600–900 words of UNIQUE content
+
+----------------------------------
+LOCAL UNIQUENESS (CRITICAL)
+----------------------------------
+
+Each page must include DIFFERENT local references:
+
+Ooltewah:
+- suburban growth
+- neighborhoods
+- newer homes, garage cleanouts
+
+Soddy-Daisy:
+- more rural areas
+- larger properties
+- yard debris, outdoor cleanup
+
+Signal Mountain:
+- elevation / mountain terrain
+- steep driveways
+- hauling challenges
+
+DO NOT reuse the same paragraphs across pages.
+
+----------------------------------
+SECTIONS TO INCLUDE
+----------------------------------
+
+Each page should have:
+
+- Same Day Junk Removal in [City]
+- What We Remove
+- Why Choose Our Local Team
+- Serving Nearby Areas
+- Call to Action
+
+----------------------------------
+INTERNAL LINKING (REQUIRED)
+----------------------------------
+
+Each page must:
+
+- Link to homepage
+- Link to at least 2 service pages
+- Link to 1–2 other location pages
+- Use keyword anchor text:
+  Example:
+  "furniture removal in Chattanooga"
+  "junk removal in Hixson"
+
+----------------------------------
+CALL TO ACTION
+----------------------------------
+
+Include strong CTA:
+
+- Call now button (tel:)
+- Same day messaging
+
+----------------------------------
+FINAL GOAL
+----------------------------------
+
+These pages must:
+- feel local
+- be unique
+- avoid duplication
+- strengthen SEO for surrounding Chattanooga areas
+
+Do NOT change design — only add new pages.
