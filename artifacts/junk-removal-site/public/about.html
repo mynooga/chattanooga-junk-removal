@@ -91,15 +91,58 @@
     footer a { color: #9ca3af; text-decoration: none; }
     footer a:hover { color: #fff; }
     @media (max-width: 540px) { .hero { padding: 44px 0 40px; } .contact-box { padding: 28px 20px; } .contact-phone { font-size: 1.6rem; } }
+
+    /* ── PHOTO BLOCKS ── */
+    .photo-row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:28px 0; }
+    .photo-row-2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:28px 0; }
+    .photo-item { position:relative; border-radius:8px; overflow:hidden; height:220px; }
+    .photo-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s; }
+    .photo-item:hover img { transform:scale(1.04); }
+    .photo-caption { position:absolute; bottom:0; left:0; right:0;
+      background:linear-gradient(transparent,rgba(15,28,46,.88));
+      color:#fff; font-size:.85rem; font-weight:700; padding:24px 12px 10px; }
+    .photo-placeholder {
+      background:#122338; border-radius:8px; display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:10px; color:#64748b;
+      font-size:.85rem; font-weight:600; text-align:center; padding:16px;
+      border:2px dashed #1e3a57; height:220px;
+    }
+    .photo-placeholder svg { opacity:.7; }
+    .photo-split { display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center; margin:28px 0; }
+    .photo-split .photo-item { height:280px; }
+    .photo-split .photo-placeholder { height:280px; }
+    .photo-split-text h3 { font-size:1.15rem; font-weight:700; color:#1a2e4a; margin-bottom:8px; }
+    .photo-split-text p { font-size:.97rem; color:#4b5563; line-height:1.6; }
+    .photo-full { position:relative; border-radius:8px; overflow:hidden; height:260px; margin:28px 0; }
+    .photo-full img { width:100%; height:100%; object-fit:cover; display:block; }
+    .photo-full .photo-caption { font-size:.95rem; }
+    .proof-strip-sm { background:#f97316; padding:12px 0; margin:0; }
+    .proof-strip-sm .container { display:flex; flex-wrap:wrap; gap:0; justify-content:center; }
+    .proof-item-sm { display:flex; align-items:center; gap:7px; color:#fff;
+      font-size:.88rem; font-weight:700; padding:5px 16px;
+      border-right:1px solid rgba(255,255,255,.3); }
+    .proof-item-sm:last-child { border-right:none; }
+    .proof-item-sm::before { content:"✓"; font-weight:900; }
+    @media(max-width:640px) {
+      .photo-row { grid-template-columns:1fr; }
+      .photo-row-2 { grid-template-columns:1fr; }
+      .photo-split { grid-template-columns:1fr; }
+    }
+    @media(max-width:480px){
+      .proof-strip-sm .container { flex-direction:column; align-items:center; }
+      .proof-item-sm { border-right:none; border-bottom:1px solid rgba(255,255,255,.2); width:100%; justify-content:center; }
+      .proof-item-sm:last-child { border-bottom:none; }
+    }
   </style>
 </head>
 <body>
 
-  <header>
+    <header>
     <div class="container">
-      <a class="brand" href="/">Chattanooga Junk Removal</a>
+      <a class="brand" href="/"><span style="color:#fff">Chattanooga</span> <span style="color:#f97316">Junk Removal</span></a>
       <div class="header-right">
         <a class="header-phone" href="tel:+14235563473">(423) 556-3473</a>
+        <a class="header-cta" href="tel:+14235563473" style="display:inline-block;background:#f97316;color:#fff;font-weight:700;font-size:.88rem;padding:8px 14px;border-radius:5px;text-decoration:none;white-space:nowrap;">Call for a Free Quote</a>
         <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
       </div>
     </div>
@@ -125,7 +168,6 @@
       <a href="/contact.html">Contact</a>
     </div>
   </nav>
-
   <section class="hero">
     <div class="container">
       <h1>About Chattanooga Junk Removal</h1>
@@ -135,7 +177,9 @@
     </div>
   </section>
 
-  <section id="who-we-are">
+  
+  <div class="proof-strip-sm"><div class="container"><div class="proof-item-sm">Locally owned</div><div class="proof-item-sm">7 days a week</div><div class="proof-item-sm">Upfront pricing</div><div class="proof-item-sm">Chattanooga area</div></div></div>
+<section id="who-we-are">
     <div class="container">
       <h2>Who We Are</h2>
       <p>Chattanooga Junk Removal is a local hauling operation based in the Chattanooga area. We're not a franchise — we're a local crew that knows this city, knows these neighborhoods, and takes pride in doing the job right for our neighbors.</p>
@@ -143,8 +187,27 @@
       <p>What we offer is straightforward: show up when we say we will, give you a fair price, do the work efficiently, and leave without hassle. No surprises, no pressure, no mess left behind.</p>
     </div>
   </section>
+<section style="padding:8px 0 48px;">
+    <div class="container">
 
-  <section id="our-approach" style="background:#f9fafb;">
+    <div class="photo-row">
+      <div class="photo-item" style="height:220px"><img src="/images/junk-removal-truck.jpg" alt="Chattanooga Junk Removal truck ready for service" loading="lazy" /><div class="photo-caption">Our truck — ready for your call</div></div>
+      <div class="photo-item" style="height:220px"><img src="/images/workers-loading.jpg" alt="Junk removal crew loading items in Chattanooga" loading="lazy" /><div class="photo-caption">Our crew doing the heavy lifting</div></div>
+      <div class="photo-item" style="height:220px"><img src="/images/junk-pile.jpg" alt="Large junk haul in Chattanooga, TN" loading="lazy" /><div class="photo-caption">From small loads to full cleanouts</div></div>
+    </div>
+    </div>
+  </section>
+
+  
+  <section style="padding:8px 0 48px;background:#f3f7fb;">
+    <div class="container">
+    <div class="photo-split">
+      <div class="photo-item" style="height:280px"><img src="/images/workers-loading.jpg" alt="Junk removal workers in Chattanooga" loading="lazy" /><div class="photo-caption">Your local crew at work</div></div>
+      <div class="photo-split-text"><h3>A Real Local Crew</h3><p>We're not a call center or a franchise — we're a local Chattanooga operation that knows this city, works hard, and treats every job seriously. When you call us, you reach a real person. When we show up, we do the work.</p><p style="margin-top:12px;"><a href="tel:+14235563473" style="color:#f97316;font-weight:700;">(423) 556-3473</a></p></div>
+    </div>
+    </div>
+  </section>
+<section id="our-approach" style="background:#f9fafb;">
     <div class="container">
       <h2>How We Work</h2>
       <div class="why-list">

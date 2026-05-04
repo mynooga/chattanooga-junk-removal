@@ -98,15 +98,58 @@
     footer a { color: #9ca3af; text-decoration: none; }
     footer a:hover { color: #fff; }
     @media (max-width: 540px) { .hero { padding: 44px 0 40px; } .contact-box { padding: 28px 20px; } .contact-phone { font-size: 1.6rem; } }
+
+    /* ── PHOTO BLOCKS ── */
+    .photo-row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:28px 0; }
+    .photo-row-2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:28px 0; }
+    .photo-item { position:relative; border-radius:8px; overflow:hidden; height:220px; }
+    .photo-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s; }
+    .photo-item:hover img { transform:scale(1.04); }
+    .photo-caption { position:absolute; bottom:0; left:0; right:0;
+      background:linear-gradient(transparent,rgba(15,28,46,.88));
+      color:#fff; font-size:.85rem; font-weight:700; padding:24px 12px 10px; }
+    .photo-placeholder {
+      background:#122338; border-radius:8px; display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:10px; color:#64748b;
+      font-size:.85rem; font-weight:600; text-align:center; padding:16px;
+      border:2px dashed #1e3a57; height:220px;
+    }
+    .photo-placeholder svg { opacity:.7; }
+    .photo-split { display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center; margin:28px 0; }
+    .photo-split .photo-item { height:280px; }
+    .photo-split .photo-placeholder { height:280px; }
+    .photo-split-text h3 { font-size:1.15rem; font-weight:700; color:#1a2e4a; margin-bottom:8px; }
+    .photo-split-text p { font-size:.97rem; color:#4b5563; line-height:1.6; }
+    .photo-full { position:relative; border-radius:8px; overflow:hidden; height:260px; margin:28px 0; }
+    .photo-full img { width:100%; height:100%; object-fit:cover; display:block; }
+    .photo-full .photo-caption { font-size:.95rem; }
+    .proof-strip-sm { background:#f97316; padding:12px 0; margin:0; }
+    .proof-strip-sm .container { display:flex; flex-wrap:wrap; gap:0; justify-content:center; }
+    .proof-item-sm { display:flex; align-items:center; gap:7px; color:#fff;
+      font-size:.88rem; font-weight:700; padding:5px 16px;
+      border-right:1px solid rgba(255,255,255,.3); }
+    .proof-item-sm:last-child { border-right:none; }
+    .proof-item-sm::before { content:"✓"; font-weight:900; }
+    @media(max-width:640px) {
+      .photo-row { grid-template-columns:1fr; }
+      .photo-row-2 { grid-template-columns:1fr; }
+      .photo-split { grid-template-columns:1fr; }
+    }
+    @media(max-width:480px){
+      .proof-strip-sm .container { flex-direction:column; align-items:center; }
+      .proof-item-sm { border-right:none; border-bottom:1px solid rgba(255,255,255,.2); width:100%; justify-content:center; }
+      .proof-item-sm:last-child { border-bottom:none; }
+    }
   </style>
 </head>
 <body>
 
-  <header>
+    <header>
     <div class="container">
-      <a class="brand" href="/">Chattanooga Junk Removal</a>
+      <a class="brand" href="/"><span style="color:#fff">Chattanooga</span> <span style="color:#f97316">Junk Removal</span></a>
       <div class="header-right">
         <a class="header-phone" href="tel:+14235563473">(423) 556-3473</a>
+        <a class="header-cta" href="tel:+14235563473" style="display:inline-block;background:#f97316;color:#fff;font-weight:700;font-size:.88rem;padding:8px 14px;border-radius:5px;text-decoration:none;white-space:nowrap;">Call for a Free Quote</a>
         <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
       </div>
     </div>
@@ -116,7 +159,7 @@
       <a href="/">Home</a>
       <span class="menu-label">Services</span>
       <a href="/furniture-removal-chattanooga-tn.html">Furniture Removal</a>
-      <a href="/appliance-removal-chattanooga-tn.html" class="active">Appliance Removal</a>
+      <a href="/appliance-removal-chattanooga-tn.html">Appliance Removal</a>
       <a href="/garage-cleanout-chattanooga-tn.html">Garage Cleanout</a>
       <a href="/yard-debris-removal-chattanooga-tn.html">Yard Debris Removal</a>
       <a href="/estate-cleanout-chattanooga-tn.html">Estate Cleanout</a>
@@ -132,7 +175,6 @@
       <a href="/contact.html">Contact</a>
     </div>
   </nav>
-
   <section class="hero">
     <div class="container">
       <h1>Appliance Removal in Chattanooga, TN</h1>
@@ -142,12 +184,25 @@
     </div>
   </section>
 
-  <section id="description">
+  
+  <div class="proof-strip-sm"><div class="container"><div class="proof-item-sm">Same-day available</div><div class="proof-item-sm">Free estimates</div><div class="proof-item-sm">We haul it away</div><div class="proof-item-sm">7 days a week</div></div></div>
+<section id="description">
     <div class="container">
       <h2>Appliance Hauling Made Easy in Chattanooga</h2>
       <p>Appliances are some of the most frustrating items to get rid of on your own. They're heavy, awkward to move, and you can't just toss them in a dumpster. Many donation centers won't take them either. That's exactly why we exist — to take the burden completely off your hands.</p>
       <p>Our team shows up with the equipment and know-how to safely disconnect, move, and haul away large appliances without damaging your floors, walls, or doorframes. We handle everything from the moment we arrive until your space is clear.</p>
       <p>We serve all of Chattanooga and Hamilton County, including residential homes, rental properties, and commercial spaces. Whether you're replacing an old appliance with a new one or just clearing out a garage, we're the call to make. Same day and next day appointments are regularly available.</p>
+    </div>
+  </section>
+  <section style="padding:16px 0 48px;background:#f3f7fb;">
+    <div class="container">
+      <p style="font-size:1rem;color:#4b5563;margin-bottom:18px;font-style:italic;">"From single items to full cleanouts — we haul it away so you don't have to."</p>
+
+    <div class="photo-row">
+      <div class="photo-item" style="height:220px"><img src="/images/junk-removal-truck.jpg" alt="Junk removal truck in Chattanooga, TN" loading="lazy" /><div class="photo-caption">Ready for pickup</div></div>
+      <div class="photo-item" style="height:220px"><img src="/images/workers-loading.jpg" alt="Workers loading junk in Chattanooga" loading="lazy" /><div class="photo-caption">We do all the lifting</div></div>
+      <div class="photo-item" style="height:220px"><img src="/images/junk-pile.jpg" alt="Junk pile ready for hauling" loading="lazy" /><div class="photo-caption">From small loads to full truckloads</div></div>
+    </div>
     </div>
   </section>
 
@@ -173,7 +228,16 @@
     </div>
   </section>
 
-  <section id="why-choose-us">
+  
+  <section style="padding:8px 0 40px;">
+    <div class="container">
+    <div class="photo-split">
+      <div class="photo-item" style="height:280px"><img src="/images/junk-removal-truck.jpg" alt="Junk removal truck ready in Chattanooga" loading="lazy" /><div class="photo-caption">Same-day and next-day availability</div></div>
+      <div class="photo-split-text"><h3>Ready When You Are</h3><p>Our truck is loaded and our crew is ready. Call before noon for the best shot at same-day service. We work 7 days a week across Chattanooga and Hamilton County.</p><p style="margin-top:12px;"><a href="tel:+14235563473" style="color:#f97316;font-weight:700;">Call (423) 556-3473 &rarr;</a></p></div>
+    </div>
+    </div>
+  </section>
+<section id="why-choose-us">
     <div class="container">
       <h2>Why Choose Us for Appliance Removal</h2>
       <div class="why-list">
@@ -206,7 +270,18 @@
     </div>
   </section>
 
-  <section id="related-services" style="background:#f9fafb;">
+  
+  <section style="padding:8px 0 40px;background:#f3f7fb;">
+    <div class="container">
+      <h3 style="font-size:1rem;font-weight:700;color:#1a2e4a;margin-bottom:14px;">Real Jobs. Real Results.</h3>
+
+    <div class="photo-row-2">
+      <div class="photo-item" style="height:220px"><img src="/images/junk-pile.jpg" alt="Large junk pile before removal in Chattanooga" loading="lazy" /><div class="photo-caption">Before: full load ready to go</div></div>
+      <div class="photo-item" style="height:220px"><img src="/images/workers-loading.jpg" alt="Junk removal workers clearing debris" loading="lazy" /><div class="photo-caption">After: cleared and hauled away</div></div>
+    </div>
+    </div>
+  </section>
+<section id="related-services" style="background:#f9fafb;">
     <div class="container">
       <h2>Related Services</h2>
       <p>Clearing out more than just appliances? We also pick up <a href="/furniture-removal-chattanooga-tn.html" style="color:#1a2e4a;font-weight:600;">old furniture</a> and do complete <a href="/garage-cleanout-chattanooga-tn.html" style="color:#1a2e4a;font-weight:600;">garage cleanouts</a> anywhere in Chattanooga. <a href="/" style="color:#1a2e4a;font-weight:600;">See all our services</a> on the homepage.</p>

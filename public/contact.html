@@ -85,15 +85,58 @@
     footer a { color: #9ca3af; text-decoration: none; }
     footer a:hover { color: #fff; }
     @media (max-width: 540px) { .hero { padding: 44px 0 40px; } .contact-big-phone { font-size: 1.7rem; } }
+
+    /* ── PHOTO BLOCKS ── */
+    .photo-row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:28px 0; }
+    .photo-row-2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:28px 0; }
+    .photo-item { position:relative; border-radius:8px; overflow:hidden; height:220px; }
+    .photo-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s; }
+    .photo-item:hover img { transform:scale(1.04); }
+    .photo-caption { position:absolute; bottom:0; left:0; right:0;
+      background:linear-gradient(transparent,rgba(15,28,46,.88));
+      color:#fff; font-size:.85rem; font-weight:700; padding:24px 12px 10px; }
+    .photo-placeholder {
+      background:#122338; border-radius:8px; display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:10px; color:#64748b;
+      font-size:.85rem; font-weight:600; text-align:center; padding:16px;
+      border:2px dashed #1e3a57; height:220px;
+    }
+    .photo-placeholder svg { opacity:.7; }
+    .photo-split { display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center; margin:28px 0; }
+    .photo-split .photo-item { height:280px; }
+    .photo-split .photo-placeholder { height:280px; }
+    .photo-split-text h3 { font-size:1.15rem; font-weight:700; color:#1a2e4a; margin-bottom:8px; }
+    .photo-split-text p { font-size:.97rem; color:#4b5563; line-height:1.6; }
+    .photo-full { position:relative; border-radius:8px; overflow:hidden; height:260px; margin:28px 0; }
+    .photo-full img { width:100%; height:100%; object-fit:cover; display:block; }
+    .photo-full .photo-caption { font-size:.95rem; }
+    .proof-strip-sm { background:#f97316; padding:12px 0; margin:0; }
+    .proof-strip-sm .container { display:flex; flex-wrap:wrap; gap:0; justify-content:center; }
+    .proof-item-sm { display:flex; align-items:center; gap:7px; color:#fff;
+      font-size:.88rem; font-weight:700; padding:5px 16px;
+      border-right:1px solid rgba(255,255,255,.3); }
+    .proof-item-sm:last-child { border-right:none; }
+    .proof-item-sm::before { content:"✓"; font-weight:900; }
+    @media(max-width:640px) {
+      .photo-row { grid-template-columns:1fr; }
+      .photo-row-2 { grid-template-columns:1fr; }
+      .photo-split { grid-template-columns:1fr; }
+    }
+    @media(max-width:480px){
+      .proof-strip-sm .container { flex-direction:column; align-items:center; }
+      .proof-item-sm { border-right:none; border-bottom:1px solid rgba(255,255,255,.2); width:100%; justify-content:center; }
+      .proof-item-sm:last-child { border-bottom:none; }
+    }
   </style>
 </head>
 <body>
 
-  <header>
+    <header>
     <div class="container">
-      <a class="brand" href="/">Chattanooga Junk Removal</a>
+      <a class="brand" href="/"><span style="color:#fff">Chattanooga</span> <span style="color:#f97316">Junk Removal</span></a>
       <div class="header-right">
         <a class="header-phone" href="tel:+14235563473">(423) 556-3473</a>
+        <a class="header-cta" href="tel:+14235563473" style="display:inline-block;background:#f97316;color:#fff;font-weight:700;font-size:.88rem;padding:8px 14px;border-radius:5px;text-decoration:none;white-space:nowrap;">Call for a Free Quote</a>
         <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
       </div>
     </div>
@@ -116,10 +159,9 @@
       <a href="/junk-removal-signal-mountain-tn.html">Signal Mountain, TN</a>
       <span class="menu-label">Info</span>
       <a href="/junk-removal-pricing-chattanooga-tn.html">Pricing</a>
-      <a href="/contact.html" class="active">Contact</a>
+      <a href="/contact.html">Contact</a>
     </div>
   </nav>
-
   <section class="hero">
     <div class="container">
       <h1>Contact Chattanooga Junk Removal</h1>
@@ -129,7 +171,9 @@
     </div>
   </section>
 
-  <section id="call-us">
+  
+  <div class="proof-strip-sm"><div class="container"><div class="proof-item-sm">Call a real person</div><div class="proof-item-sm">Free estimate by phone</div><div class="proof-item-sm">Same-day available</div><div class="proof-item-sm">7 days a week</div></div></div>
+<section id="call-us">
     <div class="container">
       <h2>Give Us a Call</h2>
       <p>We keep the process simple. When you call, a real person answers — not a machine, not a call center. You tell us what you need removed and where you're located, and we'll give you a price estimate right on the phone. No forms, no waiting days for a callback, no sales pressure.</p>
@@ -140,8 +184,24 @@
       </div>
     </div>
   </section>
+  <section style="padding:8px 0 40px;background:#f3f7fb;">
+    <div class="container">
 
-  <section id="what-to-expect" style="background:#f9fafb;">
+    <div class="photo-row-2">
+      <div class="photo-item" style="height:220px"><img src="/images/workers-loading.jpg" alt="Junk removal workers loading a truck in Chattanooga" loading="lazy" /><div class="photo-caption">Your crew — ready to haul</div></div>
+      <div class="photo-item" style="height:220px"><img src="/images/junk-pile.jpg" alt="Junk pile before removal in Chattanooga, TN" loading="lazy" /><div class="photo-caption">We handle all sizes of jobs</div></div>
+    </div>
+    </div>
+  </section>
+
+  
+  <section style="padding:8px 0 40px;">
+    <div class="container">
+
+    <div class="photo-full"><img src="/images/junk-removal-truck.jpg" alt="Chattanooga Junk Removal truck ready for same day service" loading="lazy" /><div class="photo-caption">Call us today — same-day and next-day service available across Chattanooga</div></div>
+    </div>
+  </section>
+<section id="what-to-expect" style="background:#f9fafb;">
     <div class="container">
       <h2>What to Expect When You Call</h2>
       <p>Here's what a typical call looks like:</p>

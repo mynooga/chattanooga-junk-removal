@@ -1,0 +1,484 @@
+PROJECT: Fast Chattanooga Junk Removal — Full Humanized Redesign With Multiple Real-World Images on Every Page
+
+OBJECTIVE:
+The previous update only added one image. That is not enough.
+
+Redesign the site so EVERY page feels like a real local junk removal business, not an AI-generated template.
+
+This requires multiple real-world photo areas distributed throughout each page, stronger local proof, human copy, and visible service credibility.
+
+Do not just add one image.
+Do not only update the homepage.
+Do not leave pages as mostly text/card grids.
+
+---
+
+CORE REQUIREMENT
+
+Every main page must include multiple image placements spread throughout the page.
+
+Minimum image standard per page:
+
+- Homepage: 6–10 images
+- Service pages: 4–7 images each
+- Pricing page: 3–5 images
+- About page: 4–6 images
+- Contact page: 2–4 images
+- Local/area pages: 4–7 images each
+
+Images should be distributed throughout the page:
+- hero section
+- middle proof/service section
+- “See Us in Action” section
+- near CTA sections
+- optional before/after or service gallery section
+
+Do NOT place all images in one gallery at the bottom.
+
+---
+
+IMAGE STYLE
+
+Use real-world junk removal style photos, not generic corporate stock.
+
+Photos should represent:
+- junk truck or trailer
+- workers loading junk
+- furniture removal
+- garage cleanout
+- appliance pickup
+- yard debris pile
+- before/after cleanout
+- local driveway/house context
+- messy real-life junk scenes
+
+If real images are not available yet:
+- create structured image placeholders with descriptive labels
+- use available assets if already in project
+- make the layout ready for real photos later
+
+Each image must have:
+- descriptive alt text
+- local/service relevance
+- no generic file names if images are being added/renamed
+
+Example alt text:
+- “Junk removal crew loading furniture in Chattanooga”
+- “Garage cleanout service in Chattanooga TN”
+- “Yard debris removal pickup near Chattanooga”
+- “Old couch removal from a local home”
+
+---
+
+SITE-WIDE DESIGN GOAL
+
+Make the site feel like:
+“A real Chattanooga junk removal company doing real jobs today.”
+
+Not:
+“A clean AI-generated landing page.”
+
+Use:
+- dark navy header/sections
+- orange call-to-action buttons
+- large phone number
+- local service language
+- real job photo blocks
+- uneven real-world photo crops where appropriate
+- stronger CTA sections
+- service proof sections
+
+Avoid:
+- generic AI copy
+- identical card grids everywhere
+- sterile empty white space
+- too many icon-only sections
+- abstract illustrations
+- fake corporate polish
+
+---
+
+HOMEPAGE REQUIREMENTS
+
+Rework the homepage with this structure:
+
+1. HERO SECTION
+
+Use a split layout:
+- left: headline, copy, trust bullets, call button
+- right: large real-world junk removal image
+
+Headline:
+“Same Day Junk Removal in Chattanooga, TN”
+
+Subheadline:
+“Got a couch, appliances, yard debris, or a garage full of junk you need gone? We’ll haul it away, do the lifting, and give you a clear price before we start.”
+
+Trust bullets:
+- Same-day and next-day availability
+- Locally owned & operated
+- Upfront pricing before we load
+- We do all the lifting
+
+CTA:
+“Call Now — Get a Free Quote”
+Phone:
+(423) 556-3473
+
+Add small text:
+“No obligation • Fast estimates • 7 days a week”
+
+Hero must include a large image.
+
+---
+
+2. PROOF STRIP
+
+Add a visual proof strip under hero:
+- Same-day available
+- Free estimates
+- We haul it away
+- Residential & commercial
+- Chattanooga area service
+
+This should feel like local service proof, not tech badges.
+
+---
+
+3. SEE US IN ACTION SECTION
+
+Add this section near the top, not at the bottom.
+
+Title:
+“See Us in Action Around Chattanooga”
+
+Copy:
+“From single-item pickups to full property cleanouts, we handle the lifting, loading, and hauling so you don’t have to.”
+
+Include 6 photo cards:
+- Furniture removal
+- Garage cleanout
+- Appliance pickup
+- Yard debris removal
+- Estate cleanout
+- Full truckload junk hauling
+
+Each card needs:
+- image
+- caption
+- 1 short human sentence
+
+---
+
+4. SERVICES SECTION WITH IMAGES
+
+Update service cards so they are not text-only.
+
+Each service card should include:
+- photo or thumbnail
+- service title
+- plain-language description
+- link/CTA if page exists
+
+Services:
+- Furniture Removal
+- Appliance Removal
+- Garage Cleanout
+- Yard Debris Removal
+- Estate Cleanout
+- Construction Debris
+
+Use human descriptions:
+“Couches, mattresses, dressers, tables, and heavy household items.”
+“Fridges, washers, dryers, stoves, and other bulky appliances.”
+“Clear out boxes, tools, clutter, and years of stuff taking up space.”
+
+---
+
+5. HOW IT WORKS SECTION WITH IMAGE
+
+Add a “Booking Junk Removal Is Easy” section.
+
+Use 4 steps:
+1. Call or request a quote
+2. We schedule your pickup
+3. You approve the price
+4. We haul it away
+
+Include one supporting image beside or within this section.
+
+---
+
+6. AREAS WE SERVE SECTION
+
+Add or improve:
+“Junk Removal Across the Chattanooga Area”
+
+Include local areas:
+- Chattanooga
+- Hixson
+- East Brainerd
+- Red Bank
+- Ooltewah
+- Collegedale
+- Signal Mountain
+- Lookout Mountain
+- Soddy-Daisy
+- Harrison
+- Middle Valley
+- Rossville
+- Fort Oglethorpe
+- Ringgold
+- Cleveland
+- Dalton
+
+Include a map-style placeholder or local area image if no real map exists.
+
+---
+
+7. REVIEWS / TESTIMONIALS SECTION
+
+Add:
+“What Chattanooga Customers Say”
+
+Use 3 testimonial cards.
+
+Do not invent fake review counts.
+If reviews are placeholders, make them replaceable.
+
+Example wording:
+“They showed up when they said they would and had our old furniture gone fast.”
+“Fair price, easy scheduling, and they did the lifting.”
+“Called in the morning and had the junk gone the same day.”
+
+Add one image nearby if layout allows.
+
+---
+
+8. FINAL CTA WITH IMAGE OR BACKGROUND PHOTO
+
+Final CTA:
+“Ready to Get Rid of Your Junk?”
+
+Copy:
+“Call us today for same-day or next-day junk removal in Chattanooga. We’ll give you a clear price before we start, then handle the lifting, loading, and hauling.”
+
+Phone:
+(423) 556-3473
+
+Use a background photo, side photo, or strong visual treatment.
+
+---
+
+SERVICE PAGE REQUIREMENTS
+
+Every individual service page must be humanized too.
+
+Each service page should include:
+
+1. Hero with service-specific image
+2. Human intro copy
+3. “Common items we remove” section
+4. “How this service works” section with image
+5. “Real job examples” or “See this service in action” photo row
+6. Local area mention
+7. Strong phone CTA
+
+Minimum 4 images per service page.
+
+Examples:
+
+Furniture Removal page images:
+- couch removal
+- mattress pickup
+- furniture being loaded
+- clean room/driveway after removal
+
+Appliance Removal page images:
+- refrigerator
+- washer/dryer
+- appliance being moved
+- truck/trailer loading
+
+Garage Cleanout page images:
+- cluttered garage
+- boxes/junk pile
+- loading scene
+- cleaned garage
+
+Yard Debris page images:
+- branches
+- storm debris
+- brush pile
+- hauling scene
+
+Estate Cleanout page images:
+- boxes
+- furniture
+- room cleanout
+- respectful hauling scene
+
+Pricing page images:
+- truck/trailer
+- junk pile size examples
+- crew loading
+- before/after style visual
+
+About page images:
+- local work photo
+- truck/trailer
+- owner/team placeholder
+- service area/community image
+
+Contact page images:
+- truck/job photo
+- local Chattanooga-style service image
+- small CTA image
+
+---
+
+COPY REWRITE REQUIREMENTS
+
+Rewrite the copy so it sounds like a real local operator.
+
+Avoid:
+- “comprehensive junk removal solutions”
+- “seamless experience”
+- “premier provider”
+- “tailored to your needs”
+- “exceptional customer service”
+- “professional solutions”
+
+Use:
+- “we haul it away”
+- “we do the lifting”
+- “old couches, appliances, boxes, and clutter”
+- “you approve the price before we load”
+- “call us today”
+- “same-day pickup when available”
+- “we’ll get it out of your way”
+
+Every page should sound like a real person wrote it.
+
+---
+
+LOCALIZATION REQUIREMENTS
+
+Each page should include Chattanooga-area language naturally.
+
+Use:
+- Chattanooga, TN
+- Hamilton County
+- Hixson
+- East Brainerd
+- Red Bank
+- Ooltewah
+- Signal Mountain
+- nearby communities
+
+Do not keyword stuff.
+Make it sound natural.
+
+---
+
+SEO REQUIREMENTS
+
+Preserve and improve SEO.
+
+Do not remove:
+- existing city/service keywords
+- service page structure
+- internal links
+- phone CTA
+- local references
+
+Add:
+- image alt text
+- better H2 sections
+- local area language
+- natural service keywords
+- internal links between related pages
+
+Maintain:
+- fast page load
+- responsive image sizing
+- lazy loading where appropriate
+- clean semantic HTML
+
+---
+
+IMAGE IMPLEMENTATION REQUIREMENTS
+
+If actual image assets are available:
+- use them throughout the site
+
+If assets are limited:
+- create reusable image placeholder components
+- label each placeholder by intended image type
+- make it easy to replace later
+
+Do not leave blank gray boxes with no context.
+Placeholders should say things like:
+“Photo needed: Chattanooga furniture removal job”
+“Photo needed: garage cleanout before and after”
+“Photo needed: junk truck loading debris”
+
+All images/placeholders should have meaningful alt text.
+
+---
+
+DESIGN DETAILS
+
+Use:
+- larger photo blocks
+- varied section layouts
+- alternating image/text sections
+- photo cards
+- local proof strips
+- strong CTA blocks
+- phone number repeated in key places
+
+Avoid:
+- every section looking like the same 3-column card grid
+- too much centered text
+- endless white space
+- generic icon rows
+
+Make the page feel like a real local service website.
+
+---
+
+MOBILE REQUIREMENTS
+
+Mobile must still work well.
+
+On mobile:
+- images stack cleanly
+- phone CTA remains easy to tap
+- no huge empty gaps
+- image galleries should be scroll-friendly or stacked
+- text remains readable
+
+---
+
+SUCCESS CRITERIA
+
+This project is successful only if:
+
+- multiple images appear on every major page
+- images are distributed throughout the page, not dumped in one place
+- homepage has at least 6 real-world image placements
+- service pages have at least 4 image placements each
+- copy sounds human and local
+- areas served are clearly shown
+- reviews/testimonials section exists
+- “See Us in Action” section exists
+- site feels like a real Chattanooga junk removal company
+- site no longer feels like a generic AI-generated template
+
+IMPORTANT:
+Do not stop after adding one image.
+Do not only update the homepage.
+Do not leave service pages sterile.
+
+The goal is full-site humanization with real-world visual proof on every page.
