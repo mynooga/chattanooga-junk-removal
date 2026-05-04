@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "PZ-lYFth9mEWHNDTw9FoU"
+uri = "file://dist-cloudflare.tar.gz"
+type = "unspecified"
+title = "Cloudflare Pages - All 20 Pages + Sitemap"
