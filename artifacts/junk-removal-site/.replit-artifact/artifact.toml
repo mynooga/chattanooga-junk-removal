@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Chattanooga Junk Removal"
+version = "1.0.0"
+id = "artifacts/junk-removal-site"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22724
+
+[services.development]
+run = "pnpm --filter @workspace/junk-removal-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/junk-removal-site", "run", "build" ]
+publicDir = "artifacts/junk-removal-site/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22724"
+BASE_PATH = "/"
