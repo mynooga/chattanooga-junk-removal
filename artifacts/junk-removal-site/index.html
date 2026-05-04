@@ -49,6 +49,15 @@
       text-decoration: none;
     }
     .header-phone:hover { text-decoration: underline; }
+    .header-right { display: flex; align-items: center; gap: 16px; }
+    .menu-btn { background: none; border: 2px solid rgba(255,255,255,0.3); color: #fff; font-size: 1.3rem; cursor: pointer; padding: 4px 10px; border-radius: 4px; line-height: 1; }
+    .menu-btn:hover { border-color: #f97316; color: #f97316; }
+    .dropdown-menu { background: #1a2e4a; border-bottom: 2px solid #f97316; display: none; }
+    .dropdown-menu.open { display: block; }
+    .dropdown-menu .container { display: flex; flex-direction: column; padding: 8px 20px 16px; }
+    .dropdown-menu a { color: #cbd5e1; text-decoration: none; font-size: 1rem; padding: 11px 0; border-bottom: 1px solid #253d5c; display: block; }
+    .dropdown-menu a:last-child { border-bottom: none; }
+    .dropdown-menu a:hover, .dropdown-menu a.active { color: #f97316; }
 
     /* NAV */
     .nav-bar {
@@ -322,9 +331,22 @@
   <header>
     <div class="container">
       <a class="brand" href="/">Chattanooga Junk Removal</a>
-      <a class="header-phone" href="tel:+14235550100">(423) 555-0100</a>
+      <div class="header-right">
+        <a class="header-phone" href="tel:+14235550100">(423) 555-0100</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+      </div>
     </div>
   </header>
+  <nav class="dropdown-menu" id="dropdownMenu">
+    <div class="container">
+      <a href="/" class="active">Home</a>
+      <a href="/furniture-removal-chattanooga-tn.html">Furniture Removal</a>
+      <a href="/appliance-removal-chattanooga-tn.html">Appliance Removal</a>
+      <a href="/garage-cleanout-chattanooga-tn.html">Garage Cleanout</a>
+      <a href="/yard-debris-removal-chattanooga-tn.html">Yard Debris Removal</a>
+      <a href="/estate-cleanout-chattanooga-tn.html">Estate Cleanout</a>
+    </div>
+  </nav>
   <section class="hero">
     <div class="container">
       <h1>Same Day Junk Removal in Chattanooga, TN</h1>
@@ -454,5 +476,11 @@
     <p>&copy; 2025 Chattanooga Junk Removal &bull; Chattanooga, TN &bull; <a href="tel:+14235550100">(423) 555-0100</a></p>
   </footer>
 
+  <script>
+    var btn = document.getElementById('menuBtn');
+    var menu = document.getElementById('dropdownMenu');
+    btn.addEventListener('click', function(e) { e.stopPropagation(); menu.classList.toggle('open'); });
+    document.addEventListener('click', function() { menu.classList.remove('open'); });
+  </script>
 </body>
 </html>
