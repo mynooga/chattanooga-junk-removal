@@ -1,0 +1,112 @@
+Improve on-page SEO across all HTML pages in this static junk removal website.
+
+IMPORTANT:
+- Do NOT change layout, styling, or design
+- Do NOT convert to React or frameworks
+- Only edit existing HTML files
+- Keep everything compatible with Vite + Cloudflare Pages
+
+----------------------------------
+TITLE TAGS (CRITICAL)
+----------------------------------
+Update every <title> to follow:
+
+Primary Keyword | Chattanooga, TN | Same Day Service
+
+Example:
+Junk Removal Hixson TN | Chattanooga Same Day Pickup
+
+----------------------------------
+META DESCRIPTIONS
+----------------------------------
+Add or improve meta descriptions (150–160 characters):
+- Include service + Chattanooga
+- Include a call to action (Call now, Same-day, etc.)
+
+----------------------------------
+HEADINGS STRUCTURE
+----------------------------------
+Each page must have:
+- ONE H1 (primary keyword)
+- 3–5 H2 sections
+
+Example:
+- Same Day Junk Removal
+- What We Remove
+- Why Choose Us
+- Service Areas
+
+----------------------------------
+KEYWORD PLACEMENT
+----------------------------------
+Naturally include:
+- Primary keyword in first 100 words
+- Once in an H2
+- 1–2 times in body
+
+Do NOT keyword stuff.
+
+----------------------------------
+IMAGE SEO
+----------------------------------
+Add alt text to all images:
+- Describe junk removal + Chattanooga
+
+Example:
+alt="Furniture removal service in Chattanooga TN"
+
+----------------------------------
+LOCAL SIGNALS
+----------------------------------
+Add Chattanooga + nearby areas naturally:
+- Hixson
+- East Brainerd
+- Red Bank
+- Signal Mountain
+
+----------------------------------
+INTERNAL LINKING
+----------------------------------
+Replace weak links with keyword-rich anchor text:
+- “junk removal in Hixson”
+- “furniture removal Chattanooga”
+
+Ensure:
+- Each page links to homepage
+- Each page links to 2–3 related pages
+
+----------------------------------
+STRUCTURED DATA (VERY IMPORTANT)
+----------------------------------
+
+Add this JSON-LD schema to the homepage BEFORE </head>:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Chattanooga Junk Removal",
+  "url": "https://fastchattanoogajunkremoval.com",
+  "telephone": "+1423XXXXXXX",
+  "areaServed": "Chattanooga, TN",
+  "description": "Same day junk removal service in Chattanooga, TN including furniture, appliance, and cleanouts.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattanooga",
+    "addressRegion": "TN",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+----------------------------------
+FINAL GOAL
+----------------------------------
+
+Make the site:
+- Search engine friendly
+- Locally optimized for Chattanooga
+- Clean and natural (not spammy)
+- Structured for rankings and conversions
+
+Do not change design — only improve SEO.
