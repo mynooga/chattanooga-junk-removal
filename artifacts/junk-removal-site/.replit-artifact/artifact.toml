@@ -22,10 +22,6 @@ build = [ "pnpm", "--filter", "@workspace/junk-removal-site", "run", "build" ]
 publicDir = "artifacts/junk-removal-site/dist/public"
 serve = "static"
 
-[[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
-
 [services.env]
 PORT = "22724"
 BASE_PATH = "/"
