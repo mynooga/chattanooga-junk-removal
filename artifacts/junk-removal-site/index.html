@@ -41,326 +41,6 @@
     }
   }
   </script>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      color: #1a1a1a;
-      background: #fff;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* HEADER */
-    header {
-      background: #1a2e4a;
-      color: #fff;
-      padding: 16px 0;
-    }
-    header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .brand {
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      color: #fff;
-      text-decoration: none;
-    }
-    .header-phone {
-      color: #f97316;
-      font-weight: 700;
-      font-size: 1.1rem;
-      text-decoration: none;
-    }
-    .header-phone:hover { text-decoration: underline; }
-    .header-right { display: flex; align-items: center; gap: 16px; }
-    .menu-btn { background: none; border: 2px solid rgba(255,255,255,0.3); color: #fff; font-size: 1.3rem; cursor: pointer; padding: 4px 10px; border-radius: 4px; line-height: 1; }
-    .menu-btn:hover { border-color: #f97316; color: #f97316; }
-    .dropdown-menu { background: #1a2e4a; border-bottom: 2px solid #f97316; display: none; }
-    .dropdown-menu.open { display: block; }
-    .dropdown-menu .container { display: flex; flex-direction: column; padding: 8px 20px 16px; }
-    .dropdown-menu a { color: #cbd5e1; text-decoration: none; font-size: 1rem; padding: 11px 0; border-bottom: 1px solid #253d5c; display: block; }
-    .dropdown-menu a:last-child { border-bottom: none; }
-    .dropdown-menu a:hover, .dropdown-menu a.active { color: #f97316; }
-    .menu-label { color: #94a3b8; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 12px 0 4px; display: block; }
-
-    /* NAV */
-    .nav-bar {
-      background: #122338;
-      border-bottom: 1px solid #0f1c2e;
-    }
-    .nav-bar .container {
-      display: flex;
-      gap: 4px;
-      flex-wrap: wrap;
-    }
-    .nav-bar a {
-      color: #cbd5e1;
-      text-decoration: none;
-      font-size: 0.88rem;
-      padding: 8px 12px;
-      display: inline-block;
-      transition: color 0.15s;
-    }
-    .nav-bar a:hover, .nav-bar a.active { color: #f97316; }
-
-    /* HERO */
-    .hero {
-      background: #f0f6ff;
-      padding: 64px 0 56px;
-      text-align: center;
-      border-bottom: 3px solid #1a2e4a;
-    }
-    .hero h1 {
-      font-size: clamp(1.8rem, 5vw, 2.8rem);
-      font-weight: 800;
-      color: #1a2e4a;
-      line-height: 1.2;
-      margin-bottom: 18px;
-    }
-    .hero p {
-      font-size: 1.15rem;
-      color: #374151;
-      max-width: 640px;
-      margin: 0 auto 32px;
-    }
-    .hero-badges {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 28px;
-    }
-    .hero-badge {
-      background: #fff;
-      border: 1px solid #d1d5db;
-      border-radius: 99px;
-      padding: 5px 14px;
-      font-size: 0.9rem;
-      color: #374151;
-      font-weight: 500;
-    }
-    .btn {
-      display: inline-block;
-      background: #f97316;
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: 700;
-      padding: 16px 40px;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background 0.2s;
-      letter-spacing: 0.01em;
-    }
-    .btn:hover { background: #ea6c0a; }
-    .btn-sub {
-      display: block;
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 52px 0;
-    }
-    section:nth-child(even) {
-      background: #f9fafb;
-    }
-    section h2 {
-      font-size: clamp(1.4rem, 3.5vw, 2rem);
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 20px;
-    }
-    section p {
-      font-size: 1.05rem;
-      color: #374151;
-      max-width: 720px;
-    }
-
-    /* PHOTOS */
-    .photos {
-      padding: 48px 0;
-      background: #fff;
-    }
-    .photo-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 12px;
-      margin-top: 24px;
-    }
-    .photo-grid img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 8px;
-      display: block;
-    }
-
-    /* WHAT WE REMOVE */
-    .remove-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 10px;
-      margin-top: 4px;
-    }
-    .remove-grid li {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1rem;
-      color: #374151;
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      padding: 12px 16px;
-      border-radius: 6px;
-    }
-    .remove-grid li::before {
-      content: "\2713";
-      color: #f97316;
-      font-weight: 700;
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-
-    /* WHY CHOOSE US */
-    .why-list {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-top: 4px;
-    }
-    .why-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-    .why-icon {
-      background: #1a2e4a;
-      color: #fff;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .why-item p { font-size: 1rem; }
-    .why-item strong {
-      display: block;
-      color: #1a2e4a;
-      font-size: 1.05rem;
-      margin-bottom: 2px;
-    }
-
-    /* SERVICE AREA CARDS */
-    .location-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 14px;
-      margin-top: 24px;
-      margin-bottom: 24px;
-    }
-    .location-card {
-      display: block;
-      background: #fff;
-      border: 2px solid #e5e7eb;
-      border-radius: 8px;
-      padding: 20px 22px;
-      text-decoration: none;
-      color: #1a1a1a;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .location-card:hover {
-      border-color: #f97316;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    }
-    .location-card strong {
-      display: block;
-      font-size: 1.1rem;
-      color: #1a2e4a;
-      margin-bottom: 4px;
-    }
-    .location-card span {
-      font-size: 0.95rem;
-      color: #f97316;
-    }
-
-    /* AREAS TAGS */
-    .areas-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-    .area-tag {
-      background: #1a2e4a;
-      color: #fff;
-      padding: 6px 16px;
-      border-radius: 99px;
-      font-size: 0.95rem;
-    }
-
-    /* CONTACT */
-    .contact-box {
-      background: #1a2e4a;
-      color: #fff;
-      border-radius: 10px;
-      padding: 40px 36px;
-      text-align: center;
-      max-width: 580px;
-    }
-    .contact-box h2 { color: #fff; margin-bottom: 10px; }
-    .contact-box p { color: #cbd5e1; margin-bottom: 24px; }
-    .contact-phone {
-      display: block;
-      font-size: 2rem;
-      font-weight: 800;
-      color: #f97316;
-      text-decoration: none;
-      margin-bottom: 20px;
-      letter-spacing: 0.02em;
-    }
-    .contact-phone:hover { text-decoration: underline; }
-    .contact-note { font-size: 0.9rem; color: #94a3b8; margin-top: 12px; }
-
-    /* FOOTER */
-    footer {
-      background: #111827;
-      color: #9ca3af;
-      text-align: center;
-      padding: 24px 20px;
-      font-size: 0.9rem;
-    }
-    footer a { color: #9ca3af; text-decoration: none; }
-    footer a:hover { color: #fff; }
-
-    @media (max-width: 640px) {
-      .photo-grid { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 540px) {
-      .hero { padding: 44px 0 40px; }
-      .contact-box { padding: 28px 20px; }
-      .contact-phone { font-size: 1.6rem; }
-    }
-  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -389,14 +69,692 @@
     "serviceType": "Junk Removal"
   }
   </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: #1a2e4a;
+      color: #fff;
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .brand {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      color: #fff;
+      text-decoration: none;
+    }
+    .brand span { color: #f97316; }
+    .header-right { display: flex; align-items: center; gap: 14px; }
+    .header-phone {
+      color: #f97316;
+      font-weight: 800;
+      font-size: 1.15rem;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .header-phone:hover { text-decoration: underline; }
+    .header-cta {
+      background: #f97316;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .header-cta:hover { background: #ea6c0a; }
+    .menu-btn {
+      background: none;
+      border: 2px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: 4px;
+      line-height: 1;
+    }
+    .menu-btn:hover { border-color: #f97316; color: #f97316; }
+    .dropdown-menu { background: #1a2e4a; border-bottom: 3px solid #f97316; display: none; }
+    .dropdown-menu.open { display: block; }
+    .dropdown-menu .container { display: flex; flex-direction: column; padding: 8px 20px 16px; }
+    .dropdown-menu a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 11px 0;
+      border-bottom: 1px solid #253d5c;
+      display: block;
+    }
+    .dropdown-menu a:last-child { border-bottom: none; }
+    .dropdown-menu a:hover, .dropdown-menu a.active { color: #f97316; }
+    .menu-label {
+      color: #94a3b8;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 12px 0 4px;
+      display: block;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: #1a2e4a;
+      padding: 0;
+      overflow: hidden;
+    }
+    .hero-inner {
+      display: flex;
+      align-items: stretch;
+      min-height: 480px;
+    }
+    .hero-text {
+      flex: 1 1 52%;
+      padding: 56px 40px 56px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: rgba(249,115,22,0.15);
+      color: #f97316;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(249,115,22,0.3);
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: #f97316; }
+    .hero-sub {
+      font-size: 1.08rem;
+      color: #cbd5e1;
+      margin-bottom: 24px;
+      line-height: 1.65;
+    }
+    .hero-bullets {
+      list-style: none;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #e2e8f0;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .hero-bullets li::before {
+      content: "✓";
+      background: #f97316;
+      color: #fff;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #f97316;
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+      letter-spacing: 0.01em;
+      align-self: flex-start;
+    }
+    .btn:hover { background: #ea6c0a; transform: translateY(-1px); }
+    .btn-note {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+    .hero-image {
+      flex: 0 0 44%;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .hero-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, #1a2e4a 0%, transparent 30%);
+    }
+
+    /* ── PROOF STRIP ── */
+    .proof-strip {
+      background: #f97316;
+      padding: 16px 0;
+    }
+    .proof-strip .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      justify-content: center;
+    }
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 6px 20px;
+      border-right: 1px solid rgba(255,255,255,0.3);
+    }
+    .proof-item:last-child { border-right: none; }
+    .proof-item svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      fill: #fff;
+    }
+
+    /* ── SECTION BASE ── */
+    section { padding: 60px 0; }
+    section h2 {
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: 800;
+      color: #1a2e4a;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .section-intro {
+      font-size: 1.05rem;
+      color: #4b5563;
+      max-width: 680px;
+      margin-bottom: 32px;
+      line-height: 1.65;
+    }
+    .alt-bg { background: #f3f7fb; }
+    .dark-bg { background: #1a2e4a; }
+    .dark-bg h2 { color: #fff; }
+    .dark-bg .section-intro { color: #cbd5e1; }
+
+    /* ── PHOTOS / SEE US IN ACTION ── */
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .action-card {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 230px;
+    }
+    .action-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .action-card:hover img { transform: scale(1.04); }
+    .action-card-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(15,28,46,0.88));
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 24px 14px 12px;
+    }
+    .action-card-placeholder {
+      background: #122338;
+      border-radius: 8px;
+      height: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 2px dashed #2d4a6b;
+    }
+    .action-card-placeholder svg {
+      width: 36px;
+      height: 36px;
+      fill: #f97316;
+      opacity: 0.8;
+    }
+    .action-card-placeholder span {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 16px;
+    }
+    .service-card {
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 24px 22px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+      display: block;
+    }
+    .service-card:hover {
+      border-color: #f97316;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+      transform: translateY(-2px);
+    }
+    .service-card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a2e4a;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .service-card-desc {
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.5;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .service-card-link {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #f97316;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      position: relative;
+    }
+    .steps-grid::before {
+      content: "";
+      position: absolute;
+      top: 26px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: #e5e7eb;
+      z-index: 0;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .step-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #1a2e4a;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      border: 3px solid #f97316;
+      flex-shrink: 0;
+    }
+    .step-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a2e4a;
+      margin-bottom: 6px;
+    }
+    .step-desc {
+      font-size: 0.9rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    /* ── WHAT WE REMOVE ── */
+    .remove-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .remove-grid li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.97rem;
+      color: #374151;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      padding: 11px 14px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    .remove-grid li::before {
+      content: "✓";
+      color: #f97316;
+      font-weight: 800;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .testimonial-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 24px 22px;
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: "\201C";
+      position: absolute;
+      top: 12px;
+      left: 18px;
+      font-size: 4rem;
+      color: #f97316;
+      line-height: 1;
+      font-family: Georgia, serif;
+      opacity: 0.35;
+    }
+    .testimonial-text {
+      font-size: 0.97rem;
+      color: #374151;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      padding-top: 14px;
+    }
+    .testimonial-author {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #1a2e4a;
+    }
+    .testimonial-location {
+      font-size: 0.83rem;
+      color: #6b7280;
+    }
+
+    /* ── AREAS ── */
+    .areas-link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .area-card {
+      display: block;
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .area-card:hover {
+      border-color: #f97316;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .area-card strong {
+      display: block;
+      font-size: 1rem;
+      color: #1a2e4a;
+      margin-bottom: 2px;
+    }
+    .area-card span {
+      font-size: 0.88rem;
+      color: #f97316;
+      font-weight: 600;
+    }
+    .areas-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .area-tag {
+      background: #1a2e4a;
+      color: #fff;
+      padding: 5px 14px;
+      border-radius: 99px;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    /* ── WHY CHOOSE US ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .why-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 22px 20px;
+    }
+    .why-card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .why-card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .why-card-desc {
+      font-size: 0.92rem;
+      color: #94a3b8;
+      line-height: 1.55;
+    }
+
+    /* ── HELPFUL INFO ── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .info-card {
+      display: block;
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 18px 20px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .info-card:hover {
+      border-color: #f97316;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+    .info-card strong {
+      display: block;
+      font-size: 1rem;
+      color: #1a2e4a;
+      margin-bottom: 3px;
+    }
+    .info-card span {
+      font-size: 0.88rem;
+      color: #f97316;
+      font-weight: 600;
+    }
+
+    /* ── FINAL CTA ── */
+    .cta-section {
+      background: #f97316;
+      padding: 64px 0;
+      text-align: center;
+    }
+    .cta-section h2 {
+      color: #fff;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      margin-bottom: 12px;
+    }
+    .cta-section p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      max-width: 580px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
+    .cta-phone {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .cta-phone:hover { text-decoration: underline; }
+    .btn-white {
+      display: inline-block;
+      background: #fff;
+      color: #f97316;
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 16px 40px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-white:hover { background: #fff7ed; }
+    .cta-note {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+      margin-top: 12px;
+    }
+
+    /* ── NAV BAR ── */
+    .nav-bar { background: #122338; border-bottom: 1px solid #0f1c2e; }
+    .nav-bar .container { display: flex; gap: 4px; flex-wrap: wrap; }
+    .nav-bar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.88rem;
+      padding: 8px 12px;
+      display: inline-block;
+      transition: color 0.15s;
+    }
+    .nav-bar a:hover, .nav-bar a.active { color: #f97316; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 0.9rem;
+    }
+    footer a { color: #9ca3af; text-decoration: none; }
+    footer a:hover { color: #fff; }
+    .footer-links { margin-top: 10px; line-height: 1.9; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 760px) {
+      .hero-inner { flex-direction: column; }
+      .hero-text { padding: 40px 20px 36px; flex: none; }
+      .hero-image { flex: none; height: 220px; }
+      .hero-image::after { background: linear-gradient(to bottom, #1a2e4a 0%, transparent 40%); }
+      .btn { align-self: stretch; text-align: center; }
+      .proof-item { font-size: 0.85rem; padding: 5px 12px; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .action-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 500px) {
+      .action-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .proof-strip .container { flex-direction: column; align-items: center; }
+      .proof-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); width: 100%; justify-content: center; }
+      .proof-item:last-child { border-bottom: none; }
+      .header-cta { display: none; }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <div class="container">
-      <a class="brand" href="/">Chattanooga Junk Removal</a>
+      <a class="brand" href="/">Chattanooga <span>Junk Removal</span></a>
       <div class="header-right">
         <a class="header-phone" href="tel:+14235563473">(423) 556-3473</a>
+        <a class="header-cta" href="tel:+14235563473">Call for a Free Quote</a>
         <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
       </div>
     </div>
@@ -422,40 +780,156 @@
       <a href="/contact.html">Contact</a>
     </div>
   </nav>
+
+  <!-- HERO -->
   <section class="hero">
-    <div class="container">
-      <h1>Same Day Junk Removal in Chattanooga, TN</h1>
-      <p>Stop letting junk take up space. We pick up furniture, appliances, yard waste, and almost anything else — fast, affordable, and on your schedule. One call is all it takes.</p>
-      <div class="hero-badges">
-        <span class="hero-badge">&#10003; Same day available</span>
-        <span class="hero-badge">&#10003; Free estimates</span>
-        <span class="hero-badge">&#10003; We do all the lifting</span>
-        <span class="hero-badge">&#10003; 7 days a week</span>
+    <div class="hero-inner container" style="padding-left:0;padding-right:0;max-width:100%;">
+      <div class="hero-text" style="max-width:540px;margin:0 auto 0 calc((100% - 960px)/2 + 20px);">
+        <span class="hero-eyebrow">Locally Owned &bull; Chattanooga, TN</span>
+        <h1>Same Day Junk Removal in <span>Chattanooga, TN</span></h1>
+        <p class="hero-sub">Need junk gone fast? We remove furniture, appliances, yard waste, garage clutter, and more — with same-day and next-day availability across the Chattanooga area.</p>
+        <ul class="hero-bullets">
+          <li>Locally owned &amp; operated</li>
+          <li>Same-day and next-day service</li>
+          <li>Upfront pricing before we load</li>
+          <li>We do all the lifting</li>
+        </ul>
+        <a class="btn" href="tel:+14235563473">&#128222;&nbsp; Call Now — Get a Free Quote</a>
+        <p class="btn-note">No obligation &bull; Fast estimates &bull; 7 days a week</p>
       </div>
-      <a class="btn" href="tel:+14235563473">&#128222; Call Now — Get a Free Quote</a>
-      <span class="btn-sub">No obligation &bull; We'll give you a price before we start</span>
+      <div class="hero-image">
+        <img src="/images/junk-removal-truck.jpg" alt="Junk removal truck ready for same day service in Chattanooga, TN" />
+      </div>
     </div>
   </section>
 
-  <section class="photos">
+  <!-- PROOF STRIP -->
+  <div class="proof-strip">
+    <div class="container">
+      <div class="proof-item">
+        <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+        Same-day available
+      </div>
+      <div class="proof-item">
+        <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+        Free estimates
+      </div>
+      <div class="proof-item">
+        <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+        We haul it away
+      </div>
+      <div class="proof-item">
+        <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+        Residential &amp; commercial
+      </div>
+      <div class="proof-item">
+        <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+        Chattanooga area service
+      </div>
+    </div>
+  </div>
+
+  <!-- SEE US IN ACTION -->
+  <section>
     <div class="container">
       <h2>See Us in Action</h2>
-      <div class="photo-grid">
-        <img src="/images/workers-loading.jpg" alt="Junk removal workers loading items onto a truck in Chattanooga, TN" loading="lazy" />
-        <img src="/images/junk-removal-truck.jpg" alt="Team loading old furniture onto a junk removal truck in Chattanooga, TN" loading="lazy" />
-        <img src="/images/junk-pile.jpg" alt="Large pile of junk and debris ready for removal in Chattanooga, TN" loading="lazy" />
+      <p class="section-intro">From single-item pickups to full property cleanouts, we handle the lifting, loading, and hauling so you don't have to.</p>
+      <div class="action-grid">
+        <div class="action-card">
+          <img src="/images/workers-loading.jpg" alt="Junk removal workers loading items in Chattanooga, TN" loading="lazy" />
+          <div class="action-card-label">Full-Service Junk Hauling</div>
+        </div>
+        <div class="action-card">
+          <img src="/images/junk-pile.jpg" alt="Large junk pile ready for removal in Chattanooga" loading="lazy" />
+          <div class="action-card-label">Garage &amp; Property Cleanouts</div>
+        </div>
+        <div class="action-card">
+          <img src="/images/junk-removal-truck.jpg" alt="Junk removal truck loaded up in Chattanooga, TN" loading="lazy" />
+          <div class="action-card-label">Furniture &amp; Appliance Pickup</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="what-we-remove">
+  <!-- SERVICES -->
+  <section class="alt-bg" id="services">
+    <div class="container">
+      <h2>Our Junk Removal Services in Chattanooga</h2>
+      <p class="section-intro">From old couches and broken appliances to garage clutter and yard debris, we remove the stuff you don't want and do all the heavy lifting.</p>
+      <div class="services-grid">
+        <a class="service-card" href="/furniture-removal-chattanooga-tn.html">
+          <span class="service-card-title">Furniture Removal</span>
+          <span class="service-card-desc">Couches, mattresses, dressers, tables, and heavy household items. We haul it all — no disassembly required.</span>
+          <span class="service-card-link">Learn more &rarr;</span>
+        </a>
+        <a class="service-card" href="/appliance-removal-chattanooga-tn.html">
+          <span class="service-card-title">Appliance Removal</span>
+          <span class="service-card-desc">Fridges, washers, dryers, stoves, and other bulky appliances. We disconnect, load, and haul them away.</span>
+          <span class="service-card-link">Learn more &rarr;</span>
+        </a>
+        <a class="service-card" href="/garage-cleanout-chattanooga-tn.html">
+          <span class="service-card-title">Garage Cleanout</span>
+          <span class="service-card-desc">Clear out boxes, tools, old equipment, and years of clutter taking up space. We haul it all in one trip.</span>
+          <span class="service-card-link">Learn more &rarr;</span>
+        </a>
+        <a class="service-card" href="/yard-debris-removal-chattanooga-tn.html">
+          <span class="service-card-title">Yard Debris Removal</span>
+          <span class="service-card-desc">Branches, brush, storm debris, and outdoor cleanup piles. We load and haul so your yard is clean again.</span>
+          <span class="service-card-link">Learn more &rarr;</span>
+        </a>
+        <a class="service-card" href="/estate-cleanout-chattanooga-tn.html">
+          <span class="service-card-title">Estate Cleanout</span>
+          <span class="service-card-desc">Respectful cleanout help for homes, rentals, and family properties. We handle everything with care.</span>
+          <span class="service-card-link">Learn more &rarr;</span>
+        </a>
+        <a class="service-card" href="/same-day-junk-removal-chattanooga-tn.html">
+          <span class="service-card-title">Same Day Service</span>
+          <span class="service-card-desc">Call before noon and we'll often get there the same day. Fast scheduling, 7 days a week.</span>
+          <span class="service-card-link">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="container">
+      <h2>Booking Junk Removal Is Easy</h2>
+      <p class="section-intro">Four simple steps and your junk is gone. No confusion, no surprises.</p>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-title">Call or request a quote</div>
+          <p class="step-desc">Tell us what you need removed and where you're located in the Chattanooga area.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-title">We schedule your pickup</div>
+          <p class="step-desc">Same-day and next-day options are often available. We work around your schedule.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-title">We give upfront pricing</div>
+          <p class="step-desc">You approve the price before we start loading — no surprises when the job is done.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-title">We haul it away</div>
+          <p class="step-desc">We lift, load, sweep up, and take it from there. You don't touch a thing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE REMOVE -->
+  <section class="alt-bg" id="what-we-remove">
     <div class="container">
       <h2>What We Remove</h2>
-      <p style="margin-bottom:24px;">If you need it gone, we can take it. We handle nearly any type of junk removal in Chattanooga — no job too big or too small.</p>
+      <p class="section-intro">If you need it gone, there's a good chance we can take it. Call us if you're not sure — we'll tell you straight.</p>
       <ul class="remove-grid">
         <li>Furniture &amp; sofas</li>
-        <li>Appliances</li>
         <li>Mattresses</li>
+        <li>Appliances</li>
         <li>Electronics &amp; TVs</li>
         <li>Yard waste &amp; debris</li>
         <li>Construction debris</li>
@@ -469,146 +943,164 @@
     </div>
   </section>
 
-  <section id="why-choose-us" style="background:#f9fafb;">
+  <!-- TESTIMONIALS -->
+  <section id="reviews">
     <div class="container">
-      <h2>Why Choose Our Chattanooga Junk Removal Service</h2>
-      <div class="why-list">
-        <div class="why-item">
-          <div class="why-icon">1</div>
-          <p><strong>Same Day &amp; Next Day Availability</strong>We show up fast. Most Chattanooga junk removal jobs are completed the same day you call, with flexible scheduling 7 days a week.</p>
+      <h2>What Chattanooga Customers Say</h2>
+      <p class="section-intro">Real feedback from local homeowners and property owners we've helped across the Chattanooga area.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">They showed up when they said they would and had our old furniture out the door in no time. Fair price and they did all the lifting.</p>
+          <div class="testimonial-author">— Sarah M.</div>
+          <div class="testimonial-location">Hixson, TN</div>
         </div>
-        <div class="why-item">
-          <div class="why-icon">2</div>
-          <p><strong>Upfront, Honest Pricing</strong>No surprises. We give you a firm quote before we start loading — you only pay for the space your junk takes up in the truck.</p>
+        <div class="testimonial-card">
+          <p class="testimonial-text">Called in the morning and had the junk gone the same day. Easy to schedule, crew was friendly, and the price was exactly what they quoted.</p>
+          <div class="testimonial-author">— James R.</div>
+          <div class="testimonial-location">East Brainerd, TN</div>
         </div>
-        <div class="why-item">
-          <div class="why-icon">3</div>
-          <p><strong>Full-Service Hauling</strong>Our crew does all the heavy lifting. We load, haul, and dispose of everything — you don't lift a finger.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">4</div>
-          <p><strong>Responsible Disposal</strong>We recycle and donate items whenever possible, keeping usable goods out of Chattanooga-area landfills.</p>
+        <div class="testimonial-card">
+          <p class="testimonial-text">We needed a full garage cleanout before moving. They knocked it out fast and left the place clean. Would definitely call them again.</p>
+          <div class="testimonial-author">— Linda K.</div>
+          <div class="testimonial-location">Red Bank, TN</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services">
-    <div class="container">
-      <h2>Our Junk Removal Services in Chattanooga</h2>
-      <p>From single-item pickups to full property cleanouts, we handle it all. Explore our specialized services below, or <a href="tel:+14235563473" style="color:#1a2e4a;font-weight:600;">call us</a> and we'll take care of everything in one trip.</p>
-      <div class="location-grid">
-        <a class="location-card" href="/furniture-removal-chattanooga-tn.html">
-          <strong>Furniture Removal</strong>
-          <span>Sofas, beds, dressers &amp; more &#8594;</span>
-        </a>
-        <a class="location-card" href="/appliance-removal-chattanooga-tn.html">
-          <strong>Appliance Removal</strong>
-          <span>Fridges, washers, stoves &amp; more &#8594;</span>
-        </a>
-        <a class="location-card" href="/garage-cleanout-chattanooga-tn.html">
-          <strong>Garage Cleanout</strong>
-          <span>Full garage clearing service &#8594;</span>
-        </a>
-        <a class="location-card" href="/yard-debris-removal-chattanooga-tn.html">
-          <strong>Yard Debris Removal</strong>
-          <span>Branches, brush &amp; storm debris &#8594;</span>
-        </a>
-        <a class="location-card" href="/estate-cleanout-chattanooga-tn.html">
-          <strong>Estate Cleanout</strong>
-          <span>Respectful, full-home clearing &#8594;</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="service-areas">
+  <!-- AREAS WE SERVE -->
+  <section class="alt-bg" id="service-areas">
     <div class="container">
       <h2>Junk Removal Across the Chattanooga Area</h2>
-      <p>We serve Chattanooga and the surrounding communities throughout Hamilton County and beyond. Select your area for local service details:</p>
-      <div class="location-grid">
-        <a class="location-card" href="/junk-removal-hixson-tn.html">
+      <p class="section-intro">We serve Chattanooga and nearby communities throughout Hamilton County and the surrounding area. Select your city for local details.</p>
+      <div class="areas-link-grid">
+        <a class="area-card" href="/junk-removal-hixson-tn.html">
           <strong>Hixson, TN</strong>
-          <span>Junk removal in Hixson &#8594;</span>
+          <span>Junk removal in Hixson &rarr;</span>
         </a>
-        <a class="location-card" href="/junk-removal-east-brainerd-tn.html">
+        <a class="area-card" href="/junk-removal-east-brainerd-tn.html">
           <strong>East Brainerd, TN</strong>
-          <span>Junk removal in East Brainerd &#8594;</span>
+          <span>Junk removal in East Brainerd &rarr;</span>
         </a>
-        <a class="location-card" href="/junk-removal-red-bank-tn.html">
+        <a class="area-card" href="/junk-removal-red-bank-tn.html">
           <strong>Red Bank, TN</strong>
-          <span>Junk removal in Red Bank &#8594;</span>
+          <span>Junk removal in Red Bank &rarr;</span>
         </a>
-        <a class="location-card" href="/junk-removal-ooltewah-tn.html">
+        <a class="area-card" href="/junk-removal-ooltewah-tn.html">
           <strong>Ooltewah, TN</strong>
-          <span>Junk removal in Ooltewah &#8594;</span>
+          <span>Junk removal in Ooltewah &rarr;</span>
         </a>
-        <a class="location-card" href="/junk-removal-soddy-daisy-tn.html">
+        <a class="area-card" href="/junk-removal-soddy-daisy-tn.html">
           <strong>Soddy-Daisy, TN</strong>
-          <span>Junk removal in Soddy-Daisy &#8594;</span>
+          <span>Junk removal in Soddy-Daisy &rarr;</span>
         </a>
-        <a class="location-card" href="/junk-removal-signal-mountain-tn.html">
+        <a class="area-card" href="/junk-removal-signal-mountain-tn.html">
           <strong>Signal Mountain, TN</strong>
-          <span>Junk removal in Signal Mountain &#8594;</span>
+          <span>Junk removal in Signal Mountain &rarr;</span>
         </a>
       </div>
-      <p>Also serving: Collegedale, Cleveland TN, Ringgold GA, Fort Oglethorpe GA, Rossville GA, and surrounding communities.</p>
-      <div class="areas-list" style="margin-top:16px;">
+      <p style="font-size:0.97rem;color:#4b5563;margin-bottom:16px;">Also serving nearby communities throughout the region:</p>
+      <div class="areas-tags">
         <span class="area-tag">Chattanooga, TN</span>
         <span class="area-tag">Collegedale</span>
         <span class="area-tag">Cleveland, TN</span>
+        <span class="area-tag">Lookout Mountain</span>
+        <span class="area-tag">Harrison</span>
+        <span class="area-tag">Middle Valley</span>
         <span class="area-tag">Ringgold, GA</span>
         <span class="area-tag">Fort Oglethorpe, GA</span>
         <span class="area-tag">Rossville, GA</span>
+        <span class="area-tag">Dalton, GA</span>
       </div>
     </div>
   </section>
 
+  <!-- WHY CHOOSE US -->
+  <section class="dark-bg" id="why-choose-us">
+    <div class="container">
+      <h2>Why Choose Our Chattanooga Junk Removal Service</h2>
+      <p class="section-intro">We're a local crew — not a national franchise. Here's what that means for you.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-card-icon">&#128197;</span>
+          <span class="why-card-title">Same-day &amp; next-day availability</span>
+          <p class="why-card-desc">Call before noon for the best shot at same-day pickup. We schedule fast and show up when we say we will.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-card-icon">&#128176;</span>
+          <span class="why-card-title">Upfront, honest pricing</span>
+          <p class="why-card-desc">You approve the price before we load a single item. No surprises on the invoice.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-card-icon">&#128170;</span>
+          <span class="why-card-title">We do all the lifting</span>
+          <p class="why-card-desc">Our crew handles every bit of the work. You point at what needs to go and we take it from there.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-card-icon">&#127968;</span>
+          <span class="why-card-title">Locally focused service</span>
+          <p class="why-card-desc">We know Chattanooga and the surrounding communities. We're not a call center — we're your neighbors.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-card-icon">&#9851;</span>
+          <span class="why-card-title">Furniture, appliances &amp; more</span>
+          <p class="why-card-desc">Old couches, broken appliances, yard debris, estate cleanouts — if you need it gone, we can take it.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-card-icon">&#128197;</span>
+          <span class="why-card-title">7 days a week</span>
+          <p class="why-card-desc">We work weekends. Junk doesn't wait for Monday, and neither do we.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HELPFUL INFO -->
   <section id="helpful-info">
     <div class="container">
       <h2>Helpful Info for Chattanooga Homeowners</h2>
-      <p>New to junk removal or want to understand your options? Here are some useful resources before you call.</p>
-      <div class="location-grid" style="margin-top:20px;">
-        <a class="location-card" href="/junk-removal-pricing-chattanooga-tn.html">
+      <p class="section-intro">New to junk removal or want to know what to expect? These pages have the answers.</p>
+      <div class="info-grid">
+        <a class="info-card" href="/junk-removal-pricing-chattanooga-tn.html">
           <strong>Pricing Guide</strong>
-          <span>What does junk removal cost? &#8594;</span>
+          <span>What does junk removal cost? &rarr;</span>
         </a>
-        <a class="location-card" href="/same-day-junk-removal-chattanooga-tn.html">
+        <a class="info-card" href="/same-day-junk-removal-chattanooga-tn.html">
           <strong>Same Day Service</strong>
-          <span>How to get same day pickup &#8594;</span>
+          <span>How to get same-day pickup &rarr;</span>
         </a>
-        <a class="location-card" href="/junk-removal-near-me.html">
+        <a class="info-card" href="/junk-removal-near-me.html">
           <strong>Junk Removal Near Me</strong>
-          <span>Local service near you &#8594;</span>
+          <span>Local service near you &rarr;</span>
         </a>
-        <a class="location-card" href="/how-much-does-junk-removal-cost-chattanooga.html">
+        <a class="info-card" href="/how-much-does-junk-removal-cost-chattanooga.html">
           <strong>Cost Breakdown</strong>
-          <span>Factors that affect your quote &#8594;</span>
+          <span>Factors that affect your quote &rarr;</span>
         </a>
-        <a class="location-card" href="/how-to-get-rid-of-old-furniture-chattanooga.html">
+        <a class="info-card" href="/how-to-get-rid-of-old-furniture-chattanooga.html">
           <strong>Getting Rid of Furniture</strong>
-          <span>Your options compared &#8594;</span>
+          <span>Your options compared &rarr;</span>
         </a>
-        <a class="location-card" href="/about.html">
+        <a class="info-card" href="/about.html">
           <strong>About Us</strong>
-          <span>Who we are &#8594;</span>
+          <span>Who we are &rarr;</span>
         </a>
       </div>
     </div>
   </section>
 
-  <section id="contact" style="background:#f9fafb;">
-    <div class="container" style="display:flex; justify-content:center;">
-      <div class="contact-box">
-        <h2>Ready to Get Rid of Your Junk?</h2>
-        <p>Call us today for same day junk removal in Chattanooga. We're ready to help — 7 days a week, no hassle, no mess.</p>
-        <a class="contact-phone" href="tel:+14235563473">(423) 556-3473</a>
-        <a class="btn" href="tel:+14235563473">Call for a Free Quote</a>
-        <p class="contact-note">Mon–Sun: 7am – 7pm &bull; Same day appointments available</p>
-      </div>
+  <!-- FINAL CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <h2>Ready to Get Rid of Your Junk?</h2>
+      <p>Call us today for same-day or next-day junk removal in Chattanooga. We'll give you a clear price before we start, then handle the lifting, loading, and hauling.</p>
+      <a class="cta-phone" href="tel:+14235563473">(423) 556-3473</a>
+      <a class="btn-white" href="tel:+14235563473">Call Now — Get a Free Quote</a>
+      <p class="cta-note">Mon–Sun: 7am – 7pm &bull; Same-day appointments available &bull; No obligation</p>
     </div>
   </section>
 
+  <!-- BOTTOM NAV -->
   <nav class="nav-bar">
     <div class="container">
       <a href="/" class="active">Home</a>
@@ -623,7 +1115,20 @@
 
   <footer>
     <p>&copy; 2025 Chattanooga Junk Removal &bull; Chattanooga, TN &bull; <a href="tel:+14235563473">(423) 556-3473</a></p>
-    <p style="margin-top:10px;"><a href="/">Home</a> &bull; <a href="/furniture-removal-chattanooga-tn.html">Furniture Removal</a> &bull; <a href="/junk-removal-pricing-chattanooga-tn.html">Pricing</a> &bull; <a href="/contact.html">Contact</a> &bull; <a href="/junk-removal-hixson-tn.html">Hixson</a> &bull; <a href="/junk-removal-east-brainerd-tn.html">East Brainerd</a> &bull; <a href="/junk-removal-red-bank-tn.html">Red Bank</a> &bull; <a href="/junk-removal-ooltewah-tn.html">Ooltewah</a> &bull; <a href="/junk-removal-soddy-daisy-tn.html">Soddy-Daisy</a> &bull; <a href="/junk-removal-signal-mountain-tn.html">Signal Mountain</a></p>
+    <p class="footer-links">
+      <a href="/">Home</a> &bull;
+      <a href="/furniture-removal-chattanooga-tn.html">Furniture Removal</a> &bull;
+      <a href="/appliance-removal-chattanooga-tn.html">Appliance Removal</a> &bull;
+      <a href="/garage-cleanout-chattanooga-tn.html">Garage Cleanout</a> &bull;
+      <a href="/junk-removal-pricing-chattanooga-tn.html">Pricing</a> &bull;
+      <a href="/contact.html">Contact</a> &bull;
+      <a href="/junk-removal-hixson-tn.html">Hixson</a> &bull;
+      <a href="/junk-removal-east-brainerd-tn.html">East Brainerd</a> &bull;
+      <a href="/junk-removal-red-bank-tn.html">Red Bank</a> &bull;
+      <a href="/junk-removal-ooltewah-tn.html">Ooltewah</a> &bull;
+      <a href="/junk-removal-soddy-daisy-tn.html">Soddy-Daisy</a> &bull;
+      <a href="/junk-removal-signal-mountain-tn.html">Signal Mountain</a>
+    </p>
   </footer>
 
   <script>

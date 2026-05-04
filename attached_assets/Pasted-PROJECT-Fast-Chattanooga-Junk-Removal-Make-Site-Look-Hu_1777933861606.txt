@@ -1,0 +1,444 @@
+PROJECT: Fast Chattanooga Junk Removal – Make Site Look Human, Local, and Franchise-Quality
+
+OBJECTIVE:
+Redesign the current website so it no longer feels like a generic AI-generated service page. The site should feel like a real local junk removal company, closer in trust and visual credibility to local/franchise junk removal sites like Junk King.
+
+Do not destroy the SEO structure.
+Do not overcomplicate the design.
+Keep the site fast, clean, and mobile-friendly.
+
+The goal is to make the page feel:
+- local
+- human
+- trustworthy
+- service-business real
+- conversion-focused
+
+---
+
+CORE PROBLEM TO FIX
+
+The current site is clean but too sterile.
+
+It has:
+- generic cards
+- generic copy
+- too few real-world visuals
+- not enough local proof
+- not enough “real company doing real jobs” feeling
+
+We need to add real-world signals:
+- people
+- trucks
+- junk removal job photos
+- Chattanooga area references
+- service process
+- reviews/testimonials
+- stronger calls to action
+
+---
+
+DESIGN DIRECTION
+
+Use the existing color direction:
+- dark navy
+- orange CTA
+- white/light backgrounds
+
+But make it feel less like a template.
+
+Use:
+- larger hero section
+- real photo placement
+- stronger visual hierarchy
+- less perfect spacing where appropriate
+- more local business personality
+- more photo-based sections
+- service proof sections
+
+Avoid:
+- generic AI-looking card grids everywhere
+- too many identical boxes
+- fake-looking stock corporate images
+- overly polished SaaS-style design
+- vague copy
+
+---
+
+HOMEPAGE STRUCTURE TO BUILD
+
+1. HEADER / NAV
+
+Keep simple header:
+- Business name: Chattanooga Junk Removal
+- Phone number prominently visible
+- CTA button or call link
+
+Make phone number very obvious:
+(423) 556-3473
+
+On mobile:
+- phone number should remain easy to tap
+- menu should not hide the main call action too much
+
+---
+
+2. HERO SECTION
+
+Replace the sterile centered hero with a more human local service hero.
+
+Suggested layout:
+- Left side: headline, copy, trust bullets, CTA
+- Right side: real-looking junk removal image
+
+Hero headline:
+“Same Day Junk Removal in Chattanooga, TN”
+
+Hero subheadline:
+“Need junk gone fast? We remove furniture, appliances, yard waste, garage clutter, and more — with same-day and next-day availability across Chattanooga.”
+
+Trust bullets:
+- Locally owned & operated
+- Same-day and next-day service
+- Upfront pricing before we load
+- We do all the lifting
+
+CTA button:
+“Call Now — Get a Free Quote”
+
+CTA phone:
+(423) 556-3473
+
+Small note under CTA:
+“No obligation • Fast estimates • 7 days a week”
+
+Important:
+Add a real-world image area in the hero.
+Use an existing available image if the project has one.
+If not, create a placeholder area clearly labeled for a real junk removal truck/job photo.
+
+The hero should feel like a real local service company, not a software landing page.
+
+---
+
+3. REAL-WORLD PROOF STRIP
+
+Directly under the hero, add a horizontal proof section.
+
+Use simple service guarantees:
+
+- Same-day available
+- Free estimates
+- We haul it away
+- Residential & commercial
+- Chattanooga area service
+
+This should feel like a local service guarantee strip, not a tech badge row.
+
+---
+
+4. SEE US IN ACTION SECTION
+
+Add a section titled:
+
+“See Us in Action”
+
+Purpose:
+Show real junk removal work.
+
+Use 3 to 6 image cards.
+
+Suggested card labels:
+- Garage cleanouts
+- Furniture removal
+- Yard debris pickup
+- Appliance removal
+- Estate cleanouts
+- Full-service junk hauling
+
+If real images are not available yet, use clear placeholders that can be swapped later.
+
+Important:
+The design should make it obvious that these are intended to be real job photos.
+
+Do not use generic icons here.
+Use photo boxes.
+
+Add short copy:
+“From single-item pickups to full property cleanouts, we handle the lifting, loading, and hauling so you don’t have to.”
+
+---
+
+5. SERVICES SECTION
+
+Keep the service section, but make it feel less generic.
+
+Title:
+“Our Junk Removal Services in Chattanooga”
+
+Intro:
+“From old couches and broken appliances to garage clutter and yard debris, we remove the stuff you don’t want and do the heavy lifting for you.”
+
+Service cards:
+- Furniture Removal
+  “Couches, mattresses, dressers, tables, and heavy household items.”
+- Appliance Removal
+  “Fridges, washers, dryers, stoves, and other bulky appliances.”
+- Garage Cleanout
+  “Clear out boxes, tools, clutter, and years of stuff taking up space.”
+- Yard Debris Removal
+  “Branches, brush, storm debris, and outdoor cleanup piles.”
+- Estate Cleanout
+  “Respectful cleanout help for homes, rentals, and family properties.”
+- Construction Debris
+  “Light debris, scrap materials, and cleanup after small projects.”
+
+Each card should feel practical and human.
+If possible, include a small photo or photo-style thumbnail, not just text.
+
+---
+
+6. WHAT WE REMOVE SECTION
+
+Keep this section, but improve the wording and visual feel.
+
+Title:
+“What We Remove”
+
+Intro:
+“If you need it gone, there’s a good chance we can take it. Call us if you’re not sure.”
+
+List:
+- Furniture & sofas
+- Mattresses
+- Appliances
+- Electronics & TVs
+- Yard waste & debris
+- Construction debris
+- Hot tubs & sheds
+- Moving junk
+- Estate cleanouts
+- Office furniture
+- Clothing & boxes
+- And much more
+
+Make this easy to scan.
+
+---
+
+7. HOW IT WORKS SECTION
+
+Add a section titled:
+
+“Booking Junk Removal Is Easy”
+
+Use 4 simple steps:
+
+1. Call or request a quote
+   “Tell us what you need removed.”
+
+2. We schedule your pickup
+   “Same-day and next-day options are often available.”
+
+3. We give upfront pricing
+   “You approve the price before we start loading.”
+
+4. We haul it away
+   “We lift, load, sweep up, and take it from there.”
+
+This section should reduce customer hesitation.
+
+---
+
+8. AREAS WE SERVE SECTION
+
+Add a strong local area section similar to franchise/location pages.
+
+Title:
+“Junk Removal Across the Chattanooga Area”
+
+Intro:
+“We serve Chattanooga and nearby communities throughout Hamilton County and the surrounding area.”
+
+Include area list:
+- Chattanooga
+- Hixson
+- East Brainerd
+- Red Bank
+- Ooltewah
+- Collegedale
+- Signal Mountain
+- Lookout Mountain
+- Soddy-Daisy
+- Harrison
+- Middle Valley
+- Rossville
+- Fort Oglethorpe
+- Ringgold
+- Cleveland
+- Dalton
+
+Optional:
+Add a simple service area card or map placeholder.
+Do not overbuild a real map unless it already exists.
+
+This section is important for local trust and SEO.
+
+---
+
+9. REVIEWS / TESTIMONIALS SECTION
+
+Add a section titled:
+
+“What Chattanooga Customers Say”
+
+Use 3 testimonial cards.
+
+If real reviews are not available, use placeholders clearly written as realistic local-style copy that can be replaced later.
+
+Example style:
+- “They showed up when they said they would and had our old furniture gone fast.”
+- “Fair price, easy scheduling, and they did the lifting.”
+- “Called in the morning and had the junk gone the same day.”
+
+Add a note if needed:
+“Real customer reviews can be added here once available.”
+
+Do not claim a fake review count.
+Do not invent star ratings unless the business actually has them.
+
+---
+
+10. WHY CHOOSE US SECTION
+
+Improve current section.
+
+Title:
+“Why Choose Our Chattanooga Junk Removal Service”
+
+Points:
+- Same-day and next-day availability
+- Upfront, honest pricing
+- We do all the lifting
+- Locally focused service
+- Furniture, appliances, yard debris, and more
+- Call before noon for best same-day availability
+
+Make this feel like a local operator, not generic corporate copy.
+
+---
+
+11. FINAL CTA SECTION
+
+Keep and improve the strong CTA block.
+
+Title:
+“Ready to Get Rid of Your Junk?”
+
+Copy:
+“Call us today for same-day or next-day junk removal in Chattanooga. We’ll give you a clear price before we start, then handle the lifting, loading, and hauling.”
+
+Phone:
+(423) 556-3473
+
+Button:
+“Call Now — Get a Free Quote”
+
+Make this visually strong.
+
+---
+
+COPY STYLE RULES
+
+Rewrite copy to sound human and local.
+
+Avoid phrases that sound AI-generated:
+- “comprehensive solutions”
+- “seamless experience”
+- “tailored to your needs”
+- “premier provider”
+- “exceptional service”
+
+Use phrases real customers understand:
+- “we haul it away”
+- “we do the lifting”
+- “call us today”
+- “same-day pickup when available”
+- “you approve the price before we load”
+- “old couches, appliances, boxes, and clutter”
+
+---
+
+IMAGE STRATEGY
+
+The site needs real-world photo areas.
+
+Use available images if already in the project.
+
+If no real images exist, create clean placeholders for:
+- hero truck/job image
+- see us in action gallery
+- service card thumbnails
+
+Label placeholders in code or visible development comments so they can be replaced later.
+
+The most important photos to add later:
+1. truck or trailer
+2. worker loading junk
+3. garage cleanout
+4. couch/furniture pickup
+5. yard debris pile
+6. before/after job photo
+
+---
+
+SEO REQUIREMENTS
+
+Preserve SEO value.
+
+Keep or improve:
+- H1: Same Day Junk Removal in Chattanooga, TN
+- local service keywords
+- internal links to service pages
+- internal links to pricing / same-day / near-me pages if they exist
+- city and area mentions
+- strong phone CTA
+
+Do not remove useful SEO content.
+Just make it more human and visually credible.
+
+---
+
+MOBILE REQUIREMENTS
+
+Mobile must be excellent.
+
+On mobile:
+- hero CTA must be visible quickly
+- phone number must be tap-friendly
+- sections should stack cleanly
+- photo cards should not feel cramped
+- service area list should be easy to scan
+
+---
+
+SUCCESS CRITERIA
+
+The redesign is successful when:
+
+- the site feels like a real Chattanooga junk removal company
+- the page no longer looks like a generic AI-generated template
+- visitors quickly see phone number and CTA
+- real-world image areas are added
+- local service areas are visible
+- services are written in plain human language
+- layout remains clean, fast, and SEO-friendly
+- conversion focus is stronger than before
+
+---
+
+IMPORTANT:
+Do not redesign this into a tech startup landing page.
+Do not make it look overly polished or artificial.
+
+Make it look like a serious local junk removal business that is ready to take calls today.
