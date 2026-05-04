@@ -107,6 +107,29 @@
       max-width: 720px;
     }
 
+    /* PHOTOS */
+    .photos {
+      padding: 48px 0;
+      background: #fff;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .photo-grid { grid-template-columns: 1fr; }
+      .photo-grid img { height: 220px; }
+    }
+
     /* WHAT WE REMOVE */
     .remove-grid {
       display: grid;
@@ -251,6 +274,17 @@
       <p>Need junk gone fast? We offer same day junk removal throughout Chattanooga and surrounding areas. One call and we haul — furniture, appliances, yard waste, and more.</p>
       <a class="btn" href="tel:+14235550100">&#128222; Call Now for Same Day Service</a>
       <span class="btn-sub">Available 7 days a week &bull; Free estimates</span>
+    </div>
+  </section>
+
+  <section class="photos">
+    <div class="container">
+      <h2>See Us in Action</h2>
+      <div class="photo-grid">
+        <img src="/images/workers-loading.jpg" alt="Junk removal workers loading items onto a truck" loading="lazy" />
+        <img src="/images/junk-removal-truck.jpg" alt="Team loading unwanted furniture onto a junk removal truck" loading="lazy" />
+        <img src="/images/junk-pile.jpg" alt="Large pile of junk and debris ready for removal" loading="lazy" />
+      </div>
     </div>
   </section>
 
