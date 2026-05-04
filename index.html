@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Same Day Junk Removal Chattanooga TN | Fast & Affordable</title>
-  <meta name="description" content="Same day junk removal in Chattanooga, TN. We haul away furniture, appliances, yard waste, and more. Call now for fast, affordable junk removal services." />
+  <meta name="description" content="Same day junk removal in Chattanooga, TN. We haul away furniture, appliances, yard waste, and more. Call now for a free quote — available 7 days a week." />
   <meta name="robots" content="index, follow" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,6 +39,8 @@
       font-size: 1.1rem;
       font-weight: 700;
       letter-spacing: 0.02em;
+      color: #fff;
+      text-decoration: none;
     }
     .header-phone {
       color: #f97316;
@@ -67,6 +69,22 @@
       color: #374151;
       max-width: 640px;
       margin: 0 auto 32px;
+    }
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .hero-badge {
+      background: #fff;
+      border: 1px solid #d1d5db;
+      border-radius: 99px;
+      padding: 5px 14px;
+      font-size: 0.9rem;
+      color: #374151;
+      font-weight: 500;
     }
     .btn {
       display: inline-block;
@@ -125,10 +143,6 @@
       border-radius: 8px;
       display: block;
     }
-    @media (max-width: 640px) {
-      .photo-grid { grid-template-columns: 1fr; }
-      .photo-grid img { height: 220px; }
-    }
 
     /* WHAT WE REMOVE */
     .remove-grid {
@@ -183,9 +197,7 @@
       flex-shrink: 0;
       margin-top: 2px;
     }
-    .why-item p {
-      font-size: 1rem;
-    }
+    .why-item p { font-size: 1rem; }
     .why-item strong {
       display: block;
       color: #1a2e4a;
@@ -193,7 +205,40 @@
       margin-bottom: 2px;
     }
 
-    /* AREAS */
+    /* SERVICE AREA CARDS */
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+    .location-card {
+      display: block;
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 20px 22px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .location-card:hover {
+      border-color: #f97316;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .location-card strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #1a2e4a;
+      margin-bottom: 4px;
+    }
+    .location-card span {
+      font-size: 0.95rem;
+      color: #f97316;
+    }
+
+    /* AREAS TAGS */
     .areas-list {
       display: flex;
       flex-wrap: wrap;
@@ -217,14 +262,8 @@
       text-align: center;
       max-width: 580px;
     }
-    .contact-box h2 {
-      color: #fff;
-      margin-bottom: 10px;
-    }
-    .contact-box p {
-      color: #cbd5e1;
-      margin-bottom: 24px;
-    }
+    .contact-box h2 { color: #fff; margin-bottom: 10px; }
+    .contact-box p { color: #cbd5e1; margin-bottom: 24px; }
     .contact-phone {
       display: block;
       font-size: 2rem;
@@ -235,11 +274,7 @@
       letter-spacing: 0.02em;
     }
     .contact-phone:hover { text-decoration: underline; }
-    .contact-note {
-      font-size: 0.9rem;
-      color: #94a3b8;
-      margin-top: 12px;
-    }
+    .contact-note { font-size: 0.9rem; color: #94a3b8; margin-top: 12px; }
 
     /* FOOTER */
     footer {
@@ -252,6 +287,9 @@
     footer a { color: #9ca3af; text-decoration: none; }
     footer a:hover { color: #fff; }
 
+    @media (max-width: 640px) {
+      .photo-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 540px) {
       .hero { padding: 44px 0 40px; }
       .contact-box { padding: 28px 20px; }
@@ -263,7 +301,7 @@
 
   <header>
     <div class="container">
-      <span class="brand">Chattanooga Junk Removal</span>
+      <a class="brand" href="/">Chattanooga Junk Removal</a>
       <a class="header-phone" href="tel:+14235550100">(423) 555-0100</a>
     </div>
   </header>
@@ -271,9 +309,15 @@
   <section class="hero">
     <div class="container">
       <h1>Same Day Junk Removal in Chattanooga, TN</h1>
-      <p>Need junk gone fast? We offer same day junk removal throughout Chattanooga and surrounding areas. One call and we haul — furniture, appliances, yard waste, and more.</p>
-      <a class="btn" href="tel:+14235550100">&#128222; Call Now for Same Day Service</a>
-      <span class="btn-sub">Available 7 days a week &bull; Free estimates</span>
+      <p>Stop letting junk take up space. We pick up furniture, appliances, yard waste, and almost anything else — fast, affordable, and on your schedule. One call is all it takes.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">&#10003; Same day available</span>
+        <span class="hero-badge">&#10003; Free estimates</span>
+        <span class="hero-badge">&#10003; We do all the lifting</span>
+        <span class="hero-badge">&#10003; 7 days a week</span>
+      </div>
+      <a class="btn" href="tel:+14235550100">&#128222; Call Now — Get a Free Quote</a>
+      <span class="btn-sub">No obligation &bull; We'll give you a price before we start</span>
     </div>
   </section>
 
@@ -291,7 +335,7 @@
   <section id="what-we-remove">
     <div class="container">
       <h2>What We Remove</h2>
-      <p style="margin-bottom:24px;">We handle almost any type of junk removal in Chattanooga — if you need it gone, we can take it.</p>
+      <p style="margin-bottom:24px;">If you need it gone, we can take it. We handle nearly any type of junk removal in Chattanooga — no job too big or too small.</p>
       <ul class="remove-grid">
         <li>Furniture &amp; sofas</li>
         <li>Appliances</li>
@@ -333,17 +377,29 @@
     </div>
   </section>
 
-  <section id="areas-served">
+  <section id="service-areas">
     <div class="container">
-      <h2>Areas Served Near Chattanooga, TN</h2>
-      <p>We provide junk removal across Chattanooga and the surrounding communities, including:</p>
-      <div class="areas-list">
+      <h2>Junk Removal Across the Chattanooga Area</h2>
+      <p>We serve Chattanooga and the surrounding communities throughout Hamilton County and beyond. Select your area for local service details:</p>
+      <div class="location-grid">
+        <a class="location-card" href="/junk-removal-hixson-tn.html">
+          <strong>Hixson, TN</strong>
+          <span>Junk removal in Hixson &#8594;</span>
+        </a>
+        <a class="location-card" href="/junk-removal-east-brainerd-tn.html">
+          <strong>East Brainerd, TN</strong>
+          <span>Junk removal in East Brainerd &#8594;</span>
+        </a>
+        <a class="location-card" href="/junk-removal-red-bank-tn.html">
+          <strong>Red Bank, TN</strong>
+          <span>Junk removal in Red Bank &#8594;</span>
+        </a>
+      </div>
+      <p>Also serving: Ooltewah, Soddy-Daisy, Signal Mountain, Collegedale, Cleveland TN, Ringgold GA, Fort Oglethorpe GA, and Rossville GA.</p>
+      <div class="areas-list" style="margin-top:16px;">
         <span class="area-tag">Chattanooga, TN</span>
-        <span class="area-tag">East Brainerd</span>
-        <span class="area-tag">Hixson</span>
         <span class="area-tag">Ooltewah</span>
         <span class="area-tag">Soddy-Daisy</span>
-        <span class="area-tag">Red Bank</span>
         <span class="area-tag">Signal Mountain</span>
         <span class="area-tag">Collegedale</span>
         <span class="area-tag">Cleveland, TN</span>
@@ -368,6 +424,11 @@
 
   <footer>
     <p>&copy; 2025 Chattanooga Junk Removal &bull; Chattanooga, TN &bull; <a href="tel:+14235550100">(423) 555-0100</a></p>
+    <p style="margin-top:8px;">
+      <a href="/junk-removal-hixson-tn.html">Hixson</a> &bull;
+      <a href="/junk-removal-east-brainerd-tn.html">East Brainerd</a> &bull;
+      <a href="/junk-removal-red-bank-tn.html">Red Bank</a>
+    </p>
   </footer>
 
 </body>
