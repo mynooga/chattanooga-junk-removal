@@ -1,0 +1,52 @@
+Update the hero sections on all service pages and city/location pages with SEO and conversions in mind.
+
+Do NOT change the build setup.
+Do NOT use React.
+Do NOT change deployment settings.
+Only edit the existing static HTML files.
+Keep the current design style, colors, and layout consistent.
+
+Pages to update:
+- all service pages
+- all city/location pages
+- do not overhaul the homepage unless needed for consistency
+
+Hero section requirements for every service page:
+- H1 should include the exact service keyword + Chattanooga, TN
+  Example: Furniture Removal in Chattanooga, TN
+- Add a short, clear subheadline explaining the service
+- Add a strong CTA button with tel:+14235563473
+- Show visible phone number as (423) 556-3473
+- Include “Same-day pickup available” wording naturally
+- Mention Chattanooga naturally in the first 1–2 sentences
+
+Hero section requirements for every city/location page:
+- H1 should include Junk Removal in [City], [State]
+  Example: Junk Removal in Hixson, TN
+- Add a short subheadline specific to that location
+- Add CTA button with tel:+14235563473
+- Show visible phone number as (423) 556-3473
+- Mention same-day service naturally
+- Mention the surrounding Chattanooga area naturally when appropriate
+
+SEO requirements:
+- Make each hero unique — do not copy/paste the same paragraph across pages
+- Use natural language, not keyword stuffing
+- Keep one H1 per page
+- Make sure the H1 matches the page’s main keyword
+- Make sure title tag and meta description still match each page topic
+- Add descriptive alt text to any hero images if used
+
+Conversion requirements:
+- CTA text should be direct, like:
+  “Call Now for Same-Day Pickup”
+  “Get Junk Removed Today”
+  “Call for a Fast Quote”
+- Keep the CTA above the fold
+- Make phone number clickable
+- Make mobile layout clean and readable
+
+Do not invent reviews, guarantees, licenses, insurance, or years in business.
+
+Final goal:
+Every service and city page should have a strong, unique, SEO-friendly hero section that clearly tells Google and visitors what the page is about and encourages calls.
