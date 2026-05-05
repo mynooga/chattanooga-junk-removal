@@ -1,0 +1,99 @@
+Create 20 new city/location SEO pages for this static junk removal lead-gen website.
+
+IMPORTANT:
+- Do NOT use React.
+- Do NOT change build setup.
+- Do NOT change deployment settings.
+- Only create/edit static HTML files.
+- Place all new location pages in public/.
+- Keep current design, header, footer, CTA styling, colors, and layout consistent.
+- Do NOT create thin duplicate pages.
+- Do NOT just swap city names.
+- Each page must have unique local wording.
+
+Create these pages:
+
+1. junk-removal-harrison-tn.html
+2. junk-removal-cleveland-tn.html
+3. junk-removal-collegedale-tn.html
+4. junk-removal-ringgold-ga.html
+5. junk-removal-fort-oglethorpe-ga.html
+6. junk-removal-rossville-ga.html
+7. junk-removal-lookout-mountain-tn.html
+8. junk-removal-east-ridge-tn.html
+9. junk-removal-middle-valley-tn.html
+10. junk-removal-lakesite-tn.html
+11. junk-removal-birchwood-tn.html
+12. junk-removal-apison-tn.html
+13. junk-removal-chickamauga-ga.html
+14. junk-removal-dunlap-tn.html
+15. junk-removal-dayton-tn.html
+16. junk-removal-sale-creek-tn.html
+17. junk-removal-jasper-tn.html
+18. junk-removal-trenton-ga.html
+19. junk-removal-lafayette-ga.html
+20. junk-removal-charleston-tn.html
+
+Each page must include:
+- Unique title tag
+- Unique meta description
+- One H1 only
+- H1 format: Junk Removal in [City], [State]
+- 600–900 words of unique, natural content
+- A strong hero section
+- CTA button using tel:+14235563473
+- Visible phone number: (423) 556-3473
+- Same-day service wording
+- Local references specific to that city or area
+- What we remove section
+- Why choose us section
+- Service area section
+- Final call-to-action
+- Internal links to 2–3 service pages
+- Internal links to 2–3 nearby city pages
+- Link back to homepage
+
+Local uniqueness requirements:
+- Harrison: lake-area homes, garages, outdoor cleanup, Highway 58
+- Cleveland: larger market, homes, apartments, rental cleanouts
+- Collegedale: suburban homes, student housing, garages
+- Ringgold: North Georgia homes, small businesses, move-out cleanouts
+- Fort Oglethorpe: Battlefield Parkway, retail/business cleanouts
+- Rossville: older homes, rental properties, quick pickup
+- Lookout Mountain: steep driveways, hauling difficulty, mountain homes
+- East Ridge: rental properties, apartments, older homes
+- Middle Valley: suburban neighborhoods, garage cleanouts
+- Lakesite: lake homes, outdoor debris, seasonal cleanup
+- Birchwood: rural properties, barns, sheds, outdoor debris
+- Apison: growing neighborhoods, new homes, garage clutter
+- Chickamauga: older homes, rural properties, estate cleanouts
+- Dunlap: rural cleanouts, larger lots, outdoor debris
+- Dayton: homes, rentals, yard debris, garage cleanup
+- Sale Creek: rural properties, lake/river area cleanup
+- Jasper: larger properties, garage and shed cleanouts
+- Trenton: North Georgia mountain/rural cleanouts
+- LaFayette: older homes, rentals, estate cleanouts
+- Charleston: homes, garages, appliance removal
+
+Do NOT claim:
+- fake reviews
+- licensed/insured status
+- guarantees
+- years in business
+- a physical storefront
+
+Also update:
+1. Homepage Service Areas section to include these new cities in a clean organized layout.
+2. Footer navigation or service-area footer so Google can crawl these pages.
+3. sitemap.xml to include every new page.
+4. robots.txt if needed to make sure crawling is allowed.
+
+SEO safety:
+- Avoid duplicate paragraphs.
+- Vary intros and examples.
+- Use natural language.
+- Do not keyword stuff.
+- Make pages useful for a local visitor.
+
+Final goal:
+Create a larger, SEO-safe location page footprint that helps this site compete with Chattanooga junk removal lead-gen competitors while keeping the site clean, crawlable, and conversion-focused.
