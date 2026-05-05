@@ -723,10 +723,45 @@
     footer a:hover { color: #fff; }
     .footer-links { margin-top: 10px; line-height: 1.9; }
 
+    /* ── RESPONSIVE PHOTO SPLIT (homepage) ── */
+    .hp-split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .hp-photo-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .hp-photo-box {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 300px;
+    }
+    .hp-photo-box-sm {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 210px;
+    }
+    .hp-photo-box img,
+    .hp-photo-box-sm img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .hp-photo-cap {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(15,28,46,.85));
+      color: #fff; font-weight: 700; padding: 20px 14px 10px;
+    }
+
     /* ── MOBILE ── */
     @media (max-width: 760px) {
       .hero-inner { flex-direction: column; }
-      .hero-text { padding: 40px 20px 36px; flex: none; }
+      .hero-text { padding: 40px 20px 36px; flex: none; margin: 0 !important; max-width: 100% !important; }
       .hero-image { flex: none; height: 220px; }
       .hero-image::after { background: linear-gradient(to bottom, #1a2e4a 0%, transparent 40%); }
       .btn { align-self: stretch; text-align: center; }
@@ -735,6 +770,9 @@
       .steps-grid::before { display: none; }
       .testimonials-grid { grid-template-columns: 1fr; }
       .action-grid { grid-template-columns: 1fr 1fr; }
+      .hp-split-grid { grid-template-columns: 1fr; gap: 20px; }
+      .hp-photo-pair { grid-template-columns: 1fr; }
+      .hp-photo-box { height: 220px; }
     }
     @media (max-width: 500px) {
       .action-grid { grid-template-columns: 1fr; }
@@ -784,7 +822,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner container" style="padding-left:0;padding-right:0;max-width:100%;">
-      <div class="hero-text" style="max-width:540px;margin:0 auto 0 calc((100% - 960px)/2 + 20px);">
+      <div class="hero-text" style="max-width:540px;">
         <span class="hero-eyebrow">Locally Owned &bull; Chattanooga, TN</span>
         <h1>Same Day Junk Removal in <span>Chattanooga, TN</span></h1>
         <p class="hero-sub">Need junk gone fast? We remove furniture, appliances, yard waste, garage clutter, and more — with same-day and next-day availability across the Chattanooga area.</p>
@@ -836,15 +874,15 @@
       <p class="section-intro">From single-item pickups to full property cleanouts, we handle the lifting, loading, and hauling so you don't have to.</p>
       <div class="action-grid">
         <div class="action-card">
-          <img src="/images/workers-loading.jpg" alt="Junk removal workers loading items in Chattanooga, TN" loading="lazy" />
+          <img src="/images/workers-loading.jpg" alt="Junk removal workers hauling items from a Chattanooga home" loading="lazy" />
           <div class="action-card-label">Full-Service Junk Hauling</div>
         </div>
         <div class="action-card">
-          <img src="/images/junk-pile.jpg" alt="Large junk pile ready for removal in Chattanooga" loading="lazy" />
+          <img src="/images/cluttered-garage.jpg" alt="Cluttered garage before a full cleanout in Chattanooga, TN" loading="lazy" />
           <div class="action-card-label">Garage &amp; Property Cleanouts</div>
         </div>
         <div class="action-card">
-          <img src="/images/junk-removal-truck.jpg" alt="Junk removal truck loaded up in Chattanooga, TN" loading="lazy" />
+          <img src="/images/old-sofa-removal.jpg" alt="Old sofa being removed from a Chattanooga home" loading="lazy" />
           <div class="action-card-label">Furniture &amp; Appliance Pickup</div>
         </div>
       </div>
@@ -894,26 +932,26 @@
   <!-- PHOTO SPLIT: Crew at work -->
   <section style="padding:48px 0;">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;">
+      <div class="hp-split-grid">
         <div>
           <h2 style="font-size:1.5rem;font-weight:800;color:#1a2e4a;margin-bottom:12px;">We Show Up. We Haul It Away.</h2>
           <p style="font-size:1rem;color:#4b5563;line-height:1.65;margin-bottom:14px;">Our crew handles every part of the job — walking through your property, carrying items out, loading the truck, and sweeping up when we're done. You just point and we take it from there.</p>
           <p style="font-size:1rem;color:#4b5563;line-height:1.65;margin-bottom:20px;">Available 7 days a week. Same-day appointments often available for calls before noon.</p>
           <a href="tel:+14235563473" style="display:inline-block;background:#f97316;color:#fff;font-weight:700;font-size:1rem;padding:12px 22px;border-radius:6px;text-decoration:none;">Call (423) 556-3473 &rarr;</a>
         </div>
-        <div style="position:relative;border-radius:10px;overflow:hidden;height:300px;">
-          <img src="/images/workers-loading.jpg" alt="Junk removal crew loading a truck in Chattanooga, TN" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
-          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(15,28,46,.85));color:#fff;font-size:.88rem;font-weight:700;padding:24px 14px 12px;">Your crew, loading up — no lifting required on your end</div>
+        <div class="hp-photo-box">
+          <img src="/images/truck-loading-job.jpg" alt="Junk removal truck being loaded for a pickup in Chattanooga, TN" loading="lazy" />
+          <div class="hp-photo-cap" style="font-size:.88rem;">Your crew, loading up — no lifting required on your end</div>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;">
-        <div style="position:relative;border-radius:8px;overflow:hidden;height:210px;">
-          <img src="/images/junk-pile.jpg" alt="Large junk pile before removal in Chattanooga, TN" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
-          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(15,28,46,.85));color:#fff;font-size:.85rem;font-weight:700;padding:20px 12px 10px;">Any size load — we take it all</div>
+      <div class="hp-photo-pair">
+        <div class="hp-photo-box-sm">
+          <img src="/images/cleanout-before.jpg" alt="Cluttered property before junk removal cleanout in Chattanooga" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="hp-photo-cap" style="font-size:.85rem;">Any size load — we take it all</div>
         </div>
-        <div style="position:relative;border-radius:8px;overflow:hidden;height:210px;">
-          <img src="/images/junk-removal-truck.jpg" alt="Junk removal truck loaded and ready in Chattanooga, TN" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
-          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(15,28,46,.85));color:#fff;font-size:.85rem;font-weight:700;padding:20px 12px 10px;">Truck loaded, heading out — job done</div>
+        <div class="hp-photo-box-sm">
+          <img src="/images/junk-removal-load.jpg" alt="Junk removal truck fully loaded after Chattanooga property cleanout" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="hp-photo-cap" style="font-size:.85rem;">Truck loaded, heading out — job done</div>
         </div>
       </div>
     </div>
